@@ -1,0 +1,6283 @@
+<!-- Version: 2019.11.14 -->
+<!-- Creator: KacterLin -->
+
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<AutoComplete language = "Skill">
+	<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," />
+		<KeyWord name="axlAddAutoAssignNetAlgorithm" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_algorithm" />
+				<Param name="t_displayName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSelectAll" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSelectBox" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[l_bBox]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSelectName" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_nameType" />
+				<Param name="l_names" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSelectObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSelectPoint" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[l_point]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSimpleMoveDynamics" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_origin" />
+				<Param name="r_path" />
+				<Param name="t_type" />
+				<Param name="?ref_point l_ref_point" />
+				<Param name="?color g_color" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddSimpleRbandDynamics" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_fixed_point" />
+				<Param name="t_type" />
+				<Param name="?origin l_origin" />
+				<Param name="?var_point l_var_point" />
+				<Param name="?lastPath l_lastPath" />
+				<Param name="?width f_width" />
+				<Param name="?color g_color" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAddTaper" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAirGap" func="yes">
+			<Overload retVal="l_airGapData/nil/s_error">
+				<Param name="o_item1DBID" />
+				<Param name="o_item2DBID" />
+				<Param name="[t_layer]/nil" />
+				<Param name="[s_mode]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAltSymbolList" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlAltSymbolOK" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/o_dbid" />
+				<Param name="g_layer" />
+				<Param name="t_symbol" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlAltSymbolReplace" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlBackDrill" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_dbid" />
+				<Param name="s_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlBackDrillGet" func="yes">
+			<Overload retVal="lt_backdrillData/nil">
+				<Param name="o_dbidPinOrVia" />
+			</Overload>
+			<Overload retVal="g_status">
+				<Param name="'status" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlBondFingerDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="bondFingers" />
+				<Param name="deleteWires" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlBondWireDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="bondWires" />
+				<Param name="deleteFingers" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlBuildClassPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlBuildSubclassPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_class" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCancelEnterFun" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCancelOff" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCancelOn" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCancelTest" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlChangeLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid/o_dbid" />
+				<Param name="t_newLayer" />
+				<Param name="[o_padStackDbid]/[t_padstackname]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlChangeLine2Cline" func="yes">
+			<Overload retVal="x_cnt/nil">
+				<Param name="lo_dbid/o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlChangeLineFont" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="o_dbid" />
+				<Param name="x_newFont" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlChangeNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+				<Param name="t_netName/o_netdbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlChangeWidth" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="lo_dbid/o_dbid" />
+				<Param name="f_newWidth" />
+				<Param name="[g_invisible]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCheckString" func="yes">
+			<Overload retVal="t_modString/nil">
+				<Param name="t_type" />
+				<Param name="t_string" />
+			</Overload>
+			<Overload retVal="lt_types">
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="t_errorMsg/nil">
+				<Param name="'error" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClasses" func="yes">
+			<Overload retVal="lt_classes">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClearDynamics" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClearObjectCustomColor" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[lo_dbid]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClearSelSet" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClipboardGetText" func="yes">
+			<Overload retVal="t_text/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlClipboardSetText" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_text/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCmdList" func="yes">
+			<Overload retVal="ll_strings/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCmdRegister" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_allegroCmd" />
+				<Param name="ts_callback" />
+				<Param name="?cmdType t_cmdType" />
+				<Param name="?doneCmd ts_doneCmd" />
+				<Param name="?cancelCmd ts_cancelCmd" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCmdUnregister" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_allegroCmd" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsAddVia" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_csetName" />
+				<Param name="t_padstackName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSAssemblyModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSAssemblyModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsAssignPurge" func="yes">
+			<Overload retVal="0">
+				<Param name="s_tableType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsClassTableChange" func="yes">
+			<Overload retVal="o_dbidClassTable/nil">
+				<Param name="o_dbidClassTable" />
+				<Param name="s_csetType/ll_typeAndName" />
+				<Param name="[t_csetName]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsClassTableCreate" func="yes">
+			<Overload retVal="o_dbidClassTable/nil">
+				<Param name="g_class1" />
+				<Param name="g_class2" />
+				<Param name="g_region" />
+				<Param name="s_csetType/ll_typeAndName" />
+				<Param name="[t_csetName]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsClassTableDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbidClassTable/lo_dbidClassTable" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsClassTableFind" func="yes">
+			<Overload retVal="lo_dbidClassTable/nil">
+				<Param name="s_type" />
+				<Param name="[o_dbid]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsClassTableSeek" func="yes">
+			<Overload retVal="o_dbidClassTable/nil">
+				<Param name="g_class1" />
+				<Param name="g_class2" />
+				<Param name="g_region" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSCreate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+				<Param name="t_name" />
+				<Param name="t_copyName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSCsetLock" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+				<Param name="t_csetName" />
+				<Param name="g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+				<Param name="t_name/o_dbidEcset" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsDeleteClassClassObjects" func="yes">
+			<Overload retVal="x_delCount">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsDeleteRegionClassClassObjects" func="yes">
+			<Overload retVal="x_delCount">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsDeleteRegionClassObjects" func="yes">
+			<Overload retVal="x_delCount">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsDeleteVia" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_csetName" />
+				<Param name="t_padstackName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSDesignModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'editable" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSDesignModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSDesignValueCheck" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlCNSDesignValueGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+				<Param name="[g_returnNameString]" />
+			</Overload>
+			<Overload retVal="lls_constraintNValues">
+				<Param name="'all" />
+				<Param name="[g_returnString]" />
+			</Overload>
+			<Overload retVal="f_value/t_value/nil">
+				<Param name="s_name" />
+				<Param name="[g_returnString]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSDesignValueSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="f_value/t_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNValues" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetCreate" func="yes">
+			<Overload retVal="o_dbidEcset/nil">
+				<Param name="t_name" />
+				<Param name="[t_copyName/o_dbidCopyEcset]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/o_dbidEcset" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetGet" func="yes">
+			<Overload retVal="o_dbidEcset/nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetValueCheck" func="yes">
+			<Overload retVal="t/t_errroMessage/nil">
+				<Param name="s_name/t_name" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetValueGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+				<Param name="[g_returnNameString]" />
+			</Overload>
+			<Overload retVal="lls_constraintNValues">
+				<Param name="o_ecsetDbid/t_ecsetName" />
+				<Param name="'all" />
+				<Param name="[g_returnString]" />
+			</Overload>
+			<Overload retVal="f_value/t_value/nil">
+				<Param name="o_ecsetDbid/t_ecsetName" />
+				<Param name="s_name" />
+				<Param name="[g_returnString]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSEcsetValueSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_ecsetDbid/t_ecsetName" />
+				<Param name="t_name/s_name" />
+				<Param name="f_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="o_ecsetDbid/t_ecsetName" />
+				<Param name="ll_constraintNValues" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetAssembly" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="s_constraint" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ll_nameValue/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="nil" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ls_cnsTypes">
+				<Param name="nil" />
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetDefaultMinLineWidth" func="yes">
+			<Overload retVal="f_minLineWidthValue">
+				<Param name="t_sublassName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetPhysical" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="s_constraint" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ll_nameValue/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="nil" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ls_cnsTypes">
+				<Param name="nil" />
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetPinDelayEnabled" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetPinDelayPVF" func="yes">
+			<Overload retVal="t_pinDelayPVF">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetSameNet" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="s_constraint" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ll_nameValue/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="nil" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ls_cnsTypes">
+				<Param name="nil" />
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetSameNetXtalkEnabled" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetSpacing" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="s_constraint" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ll_nameValue/nil">
+				<Param name="t_cset" />
+				<Param name="t_layer" />
+				<Param name="nil" />
+				<Param name="[g_string]" />
+			</Overload>
+			<Overload retVal="ls_cnsTypes">
+				<Param name="nil" />
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsGetViaList" func="yes">
+			<Overload retVal="lt_padstacks/nil">
+				<Param name="t_csetName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetViaZEnabled" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSGetViaZPVF" func="yes">
+			<Overload retVal="t_viaZPVF">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSIsCsetLocked" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+				<Param name="t_csetName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSIsLockedDomain" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsList" func="yes">
+			<Overload retVal="lt_csetNames/ls_csetsDomain">
+				<Param name="s_csetDomain/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSLockDomain" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_domain" />
+				<Param name="g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSMapClear" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSMapUpdate" func="yes">
+			<Overload retVal="x_drcCount/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsNetFlattened" func="yes">
+			<Overload retVal="t_cnsValue/nil">
+				<Param name="o_netDbid/t_netName" />
+				<Param name="t_cnsName/s_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSPhysicalModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSPhysicalModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsPurgeAll" func="yes">
+			<Overload retVal="x_purgeCount">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsPurgeCsets" func="yes">
+			<Overload retVal="x_purgeCount">
+				<Param name="list l_type" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCnsPurgeObjects" func="yes">
+			<Overload retVal="x_purgeCount">
+				<Param name="list l_type" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSameNetModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSameNetModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetAssembly" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_object/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="s_constraint" />
+				<Param name="g_value" />
+				<Param name="[s_object_type]" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="t_object/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="ll_constraintValues" />
+				<Param name="nil" />
+				<Param name="[s_object_type]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetPhysical" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="s_constraint" />
+				<Param name="g_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="ll_constraintValues" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetPinDelayEnabled" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetPinDelayPVF" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetSameNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="s_constraint" />
+				<Param name="g_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="ll_constraintValues" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetSameNetXtalkEnabled" func="yes">
+			<Overload retVal="t">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetSpacing" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="s_constraint" />
+				<Param name="g_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="t_cset/nil" />
+				<Param name="t_layer/nil" />
+				<Param name="ll_constraintValues" />
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetViaZEnabled" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSetViaZPVF" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSpacingMax" func="yes">
+			<Overload retVal="f_maxSpacing">
+				<Param name="[s_spacingType]" />
+				<Param name="[t_layer]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSpacingMin" func="yes">
+			<Overload retVal="f_minSpacing">
+				<Param name="[s_spacingType]" />
+				<Param name="[t_layer]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSpacingModeGet" func="yes">
+			<Overload retVal="ls_constraints">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="lls_constraintNModes">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="s_mode/nil">
+				<Param name="s_name/t_name" />
+			</Overload>
+			<Overload retVal="t_name/nil">
+				<Param name="s_name/t_name" />
+				<Param name="'print" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCNSSpacingModeSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/s_name" />
+				<Param name="t_mode/s_mode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="l_constraintNModes" />
+				<Param name="t_mode/smode" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="ll_constraintNModes" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlColorGet" func="yes">
+			<Overload retVal="lx_rgb/nil">
+				<Param name="x_number/`background" />
+			</Overload>
+			<Overload retVal="x_count">
+				<Param name="'count" />
+			</Overload>
+			<Overload retVal="llx_rgb">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="x_count">
+				<Param name="'pattern" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorLoad" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_file/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorOnGet" func="yes">
+			<Overload retVal="t">
+				<Param name="g_item" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorOnSet" func="yes">
+			<Overload retVal="t">
+				<Param name="g_item" />
+				<Param name="g_state" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorPriorityGet" func="yes">
+			<Overload retVal="nil">
+				<Param name="g_item" />
+				<Param name="[g_item2]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorPrioritySet" func="yes">
+			<Overload retVal="t">
+				<Param name="g_item" />
+				<Param name="[g_item2]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorSave" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_file/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_number/'background" />
+				<Param name="l_rbg" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'all" />
+				<Param name="ll_rgb" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorShadowGet" func="yes">
+			<Overload retVal="t/nil/x_percent">
+				<Param name="g_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlColorShadowSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_mode" />
+				<Param name="t/nil" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'percent" />
+				<Param name="x_percentage" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCompAddPin" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_comp" />
+				<Param name="g_absLoc" />
+				<Param name="o_pin/lo_pins" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCompDeletePin" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_pin/lo_pins" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCompileSymbol" func="yes">
+			<Overload retVal="t_symbolName/nil">
+				<Param name="[?symbol t_name]" />
+				<Param name="[?type t_type]" />
+				<Param name="[?silent t/nil]" />
+				<Param name="[?silentOnOverwrite t/nil]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCompMovePin" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?move l_deltaPoint" />
+				<Param name="?groupMirror t/nil" />
+				<Param name="?groupRotation f_angle" />
+				<Param name="?rotOrigin l_rotatePoint" />
+				<Param name="?pinRotation f_deltaAngle" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlComponentChangeClass" func="yes">
+			<Overload retVal="t_oldClass/nil">
+				<Param name="s_devType/o_compDef" />
+				<Param name="s_class" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCompSetPinAttributes" func="yes">
+			<Overload retVal="o_pin/lo_pins">
+				<Param name="?number t_pinNumber" />
+				<Param name="?name t_pinName" />
+				<Param name="?use t_pinUse" />
+				<Param name="?padstack t_padstack/g_padstack" />
+				<Param name="?rotation f_rotation" />
+				<Param name="?swapCode n_swapCode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlConductorBottomLayer" func="yes">
+			<Overload retVal="t_name">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlConductorTopLayer" func="yes">
+			<Overload retVal="t_name">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlControlRaise" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCopyObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid/o_dbid" />
+				<Param name="?move l_deltaPoint" />
+				<Param name="?mirror t/nil" />
+				<Param name="?angle f_angle" />
+				<Param name="?origin l_rotatePoint" />
+				<Param name="?allOrNone t/nil" />
+				<Param name="?retainNet t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCopyProperties" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_destDbid" />
+				<Param name="o_srcDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlcreate" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlCreateAttachment" func="yes">
+			<Overload retVal="o_attachment/nil">
+				<Param name="t_attachmentId" />
+				<Param name="t_passwd" />
+				<Param name="x_revision" />
+				<Param name="s_dataFormat" />
+				<Param name="t_data" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCreateBondFinger" func="yes">
+			<Overload retVal="dbid/nil">
+				<Param name="parentSymbol" />
+				<Param name="fingerName" />
+				<Param name="list(fingerLocation fingerRotation fingerPadstack)" />
+				<Param name="list(placementStyle ewlLength fingerSnap fingerAlign)" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCreateBondWire" func="yes">
+			<Overload retVal="dbidt/nil">
+				<Param name="parentSymbol" />
+				<Param name="list(wireStartOwner wireStartLocation)" />
+				<Param name="list(wireEndOwner wireEndLocation)" />
+				<Param name="list(wireDiameter wireProfile)" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCreateDeviceFileTemplate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_deviceName" />
+				<Param name="t_CLASS" />
+				<Param name="l_pinList" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCreateWirebondGuide" func="yes">
+			<Overload retVal="dbid/nil">
+				<Param name="r_path" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCurrentDesign" func="yes">
+			<Overload retVal="t_design">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCursorGet" func="yes">
+			<Overload retVal="l_xy">
+				<Param name="g_pixel" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCursorWarp" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_pixel" />
+				<Param name="l_xy" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCustomColorObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[lo_dbid]" />
+				<Param name="[g_custom_color]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlCVFColorChooserDlg" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[x_color_index]" />
+				<Param name="[g_show_hilite]" />
+				<Param name="[x_hilite_flag]" />
+				<Param name="[x_bitmap_index]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDB2Path" func="yes">
+			<Overload retVal="r_path">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBActiveShape" func="yes">
+			<Overload retVal="o_shape/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBAddGroupObjects" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_group" />
+				<Param name="lo_members" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBAddProp" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="lo_attach" />
+				<Param name="ll_name_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBAltOrigin" func="yes">
+			<Overload retVal="xy/nil">
+				<Param name="g_mode" />
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBAssignNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_object/lo_object" />
+				<Param name="o_net/t_net" />
+				<Param name="[g_ripup]" />
+				<Param name="[g_ignoreFixed]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBChangeDesignExtents" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_bBox" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBChangeDesignOrigin" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBChangeDesignUnits" func="yes">
+			<Overload retVal="x_drcCount/nil">
+				<Param name="t_units/nil" />
+				<Param name="x_accuracy/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBChangeText" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_dbid" />
+				<Param name="t_text" />
+				<Param name="[r_textOrientation/x_textBlock]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCheck" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBCloak" func="yes">
+			<Overload retVal="g_return">
+				<Param name="g_func" />
+				<Param name="[g_mode]/[lg_mode]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBControl" func="yes">
+			<Overload retVal="g_currentValue/ls_names">
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCopyPadstack" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="o_dbid/t_padstackName" />
+				<Param name="lt_startEnd" />
+				<Param name="[g_dontTrim]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateCircle" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="l_location" />
+				<Param name="[f_width]" />
+				<Param name="[t_layer]" />
+				<Param name="[rd_parent]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateCloseShape" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_shape" />
+				<Param name="[g_forceShape]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateComponent" func="yes">
+			<Overload retVal="r_dbid/nil">
+				<Param name="s_refDes" />
+				<Param name="s_deviceName" />
+				<Param name="[s_package]" />
+				<Param name="[s_value]" />
+				<Param name="[s_tolerance]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateConceptComponent" func="yes">
+			<Overload retVal="r_dbid/nil">
+				<Param name="s_refdes" />
+				<Param name="s_partPath" />
+				<Param name="s_logName" />
+				<Param name="s_primName" />
+				<Param name="[s_pptRowName]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateExternalDRC" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_constraint/lt_constraint" />
+				<Param name="l_anchorPoint" />
+				<Param name="t_layer" />
+				<Param name="[lo_dbid]" />
+				<Param name="[l_secondPoint]" />
+				<Param name="[t_actualValue]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateFilmRec" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateGroup" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="t_name" />
+				<Param name="t_type" />
+				<Param name="lo_groupMembers" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateLine" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="l_points" />
+				<Param name="[f_width]" />
+				<Param name="[t_layer]" />
+				<Param name="[t_netname]/['line]" />
+				<Param name="[rd_parent]" />
+				<Param name="[s_font]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateManyModuleInstances" func="yes">
+			<Overload retVal="o_result/nil">
+				<Param name="t_name" />
+				<Param name="t_moddefName" />
+				<Param name="x_tileStartNum" />
+				<Param name="l_origin" />
+				<Param name="l_offset" />
+				<Param name="x_num_tiles" />
+				<Param name="f_rotation" />
+				<Param name="x_logicMethod" />
+				<Param name="[l_netExcept]" />
+				<Param name="[g_mirror]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateModuleDef" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name" />
+				<Param name="l_origin" />
+				<Param name="l_objects" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateModuleInstance" func="yes">
+			<Overload retVal="o_result/nil">
+				<Param name="t_name" />
+				<Param name="t_moddef_name" />
+				<Param name="l_origin" />
+				<Param name="r_rotation" />
+				<Param name="i_logic_method" />
+				<Param name="[l_net_except]" />
+				<Param name="[g_mirror]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateNet" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="t_netName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateOpenShape" func="yes">
+			<Overload retVal="o_shape/nil">
+				<Param name="o_polygon/r_path" />
+				<Param name="[l_r_fill]" />
+				<Param name="[t_layer]" />
+				<Param name="[t_netname/o_netdbid]" />
+				<Param name="[o_parent]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreatePadStack" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_name" />
+				<Param name="r_drill" />
+				<Param name="l_pad" />
+				<Param name="[g_nocheck]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreatePath" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="r_path" />
+				<Param name="[t_layer]" />
+				<Param name="[t_netName]/['line]" />
+				<Param name="[o_parent]" />
+				<Param name="[lo_props]" />
+				<Param name="[s_font]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreatePin" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_padstack/o_padstackDbid" />
+				<Param name="l_anchorPoint" />
+				<Param name="r_pinText/nil" />
+				<Param name="[f_rotation]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreatePropDictEntry" func="yes">
+			<Overload retVal="od_propDictEntry/nil">
+				<Param name="t_name" />
+				<Param name="t_type" />
+				<Param name="lt_objects/t" />
+				<Param name="[ln_range]" />
+				<Param name="[t_units]" />
+				<Param name="[g_hidden]" />
+			</Overload>
+			<Overload retVal="lt_availbeObject">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateRectangle" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="l_bBox" />
+				<Param name="[g_fill]" />
+				<Param name="[t_layer]" />
+				<Param name="[t_netname]" />
+				<Param name="[o_parent]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateShape" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_polygon / r_path" />
+				<Param name="[l_r_fill/t/nil]" />
+				<Param name="[t_layer]" />
+				<Param name="[t_netName]" />
+				<Param name="[o_parent]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateSymbol" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_refdes" />
+				<Param name="l_anchorPoint" />
+				<Param name="[g_mirror]" />
+				<Param name="[f_rotation]" />
+				<Param name="[t_embeddedLayer]" />
+			</Overload>
+			<Overload retVal="l_result/nil">
+				<Param name="l_symbolData" />
+				<Param name="l_anchorPoint" />
+				<Param name="[g_mirror]" />
+				<Param name="[f_rotation]" />
+				<Param name="[t_embeddedLayer]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateSymbolAutosilk" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_symbol" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateSymbolSkeleton" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_refdes" />
+				<Param name="l_anchorPoint" />
+				<Param name="g_mirror" />
+				<Param name="f_rotation" />
+				<Param name="l_pinData" />
+				<Param name="[t_embeddedLayer]" />
+			</Overload>
+			<Overload retVal="l_result/nil">
+				<Param name="l_symbolData" />
+				<Param name="l_anchorPoint" />
+				<Param name="g_mirror" />
+				<Param name="f_rotation" />
+				<Param name="l_pinData" />
+				<Param name="[t_embeddedLayer]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateSymDefSkeleton" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="l_symbolData" />
+				<Param name="l_extents" />
+				<Param name="[l_pinData]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateText" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_text" />
+				<Param name="l_anchorPoint" />
+				<Param name="r_textOrientation" />
+				<Param name="[t_layer]" />
+				<Param name="[o_attach]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateVia" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="t_padstack/o_padstackDbid" />
+				<Param name="l_anchorPoint" />
+				<Param name="[t_netName]" />
+				<Param name="[g_mirror]" />
+				<Param name="[f_rotation]" />
+				<Param name="[o_parent]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateVoid" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="o_shape/nil" />
+				<Param name="r_path/o_polygon" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBCreateVoidCircle" func="yes">
+			<Overload retVal="o_polygon/nil">
+				<Param name="o_shape" />
+				<Param name="l_location" />
+				<Param name="[f_width]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDeleteProp" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="lo_attach" />
+				<Param name="lt_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDeletePropAll" func="yes">
+			<Overload retVal="x_count/nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDeletePropDictEntry" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDelLock" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[t_password]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDisbandGroup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_group" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDisplayControl" func="yes">
+			<Overload retVal="g_currentValue/ls_names">
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDummyNet" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBDynamicShapes" func="yes">
+			<Overload retVal="x_count">
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBFindByName" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBGetAttachedText" func="yes">
+			<Overload retVal="l_dbid/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetConnect" func="yes">
+			<Overload retVal="l_result">
+				<Param name="o_dbid" />
+				<Param name="[t_full]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetDesign" func="yes">
+			<Overload retVal="o_design/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetDesignUnits" func="yes">
+			<Overload retVal="l_value">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetDrillPlating" func="yes">
+			<Overload retVal="'PLATED'/'NON PLATED'/nil">
+				<Param name="t_padstackname" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetExtents" func="yes">
+			<Overload retVal="bBox/nil">
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="g_visibleOnly" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetGroupFromItem" func="yes">
+			<Overload retVal="lo_groupDbid/nil">
+				<Param name="o_dbid" />
+				<Param name="t_groupType" />
+				<Param name="[g_promoteToNet]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetLayerType" func="yes">
+			<Overload retVal="t_layertype/nil">
+				<Param name="t_layerName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetLength" func="yes">
+			<Overload retVal="f_etchlength/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetLock" func="yes">
+			<Overload retVal="nil/l_info">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetLonelyBranches" func="yes">
+			<Overload retVal="lo_branch/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetManhattan" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_dbid_net" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetPad" func="yes">
+			<Overload retVal="o_pad/nil">
+				<Param name="o_dbid" />
+				<Param name="t_layer" />
+				<Param name="t_type" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetPropDict" func="yes">
+			<Overload retVal="lt_propNames">
+				<Param name="S_filter/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetPropDictEntry" func="yes">
+			<Overload retVal="o_propDictEntry/nil">
+				<Param name="t_name" />
+			</Overload>
+			<Overload retVal="lt_validObjects">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetProperties" func="yes">
+			<Overload retVal="l_result/nil">
+				<Param name="o_dbid" />
+				<Param name="[lt_type]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetShapes" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBGetSymbolBodyExtent" func="yes">
+			<Overload retVal="bBox/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGetTextBlockCount" func="yes">
+			<Overload retVal="x_textBlockCount">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGridGet" func="yes">
+			<Overload retVal="l_LayerPadSuppress">
+				<Param name="t_layer/x_layerNumber" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGridSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="og_grid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBGroupRename" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_groupDbid" />
+				<Param name="t_newName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDbidDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDbidName" func="yes">
+			<Overload retVal="t_name/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIgnoreFixed" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[g_ignore]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsBondingWireLayer" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="t_layerName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsBondpad" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBIsBondwire" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsDiePad" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsDieStackLayer" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="t_layerName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsFixed" func="yes">
+			<Overload retVal="nil or [dbid of 1st element that is making item fixed]">
+				<Param name="o_dbid" />
+				<Param name="[g_showMessage]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsPackagePin" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsPlatingbarPin" func="yes">
+			<Overload retVal="t or nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBIsReadOnly" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBMemoryReclaim" func="yes">
+			<Overload retVal="x_sizeReclaimed">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBOpenShape" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="o_shapeDbid/nil" />
+				<Param name="[o_polygon/r_path/nil]" />
+				<Param name="[g_close]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBPinPairLength" func="yes">
+			<Overload retVal="f_etchlength/nil">
+				<Param name="o_pin1" />
+				<Param name="o_pin2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBRefreshId" func="yes">
+			<Overload retVal="o_dbid/t/nil">
+				<Param name="o_dbid/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBRemoveGroupObjects" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_group" />
+				<Param name="lo_members" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBSectorSize" func="yes">
+			<Overload retVal="nil">
+				<Param name="[f_size]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBSetLock" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDBTextBlockCompact" func="yes">
+			<Overload retVal="x_unusedBlocks">
+				<Param name="t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTextBlockCreate" func="yes">
+			<Overload retVal="x_textBlock/nil">
+				<Param name="x_blockTemplate" />
+				<Param name="?width f_width" />
+				<Param name="?height f_height" />
+				<Param name="?lineSpace f_lineSpace" />
+				<Param name="?charSpace f_charSpace" />
+				<Param name="?photoWidth f_photoWidth" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTextBlockFindName" func="yes">
+			<Overload retVal="x_textBlockNumber/nil">
+				<Param name="x_textBlockName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTextBlockGetName" func="yes">
+			<Overload retVal="t_name/nil">
+				<Param name="x_textBlockNumber" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTextBlockSetName" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_textBlockNumber" />
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTransactionCommit" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_mark" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTransactionMark" func="yes">
+			<Overload retVal="t">
+				<Param name="x_mark" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTransactionOops" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_mark" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTransactionRollback" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_mark" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTransactionStart" func="yes">
+			<Overload retVal="x_mark/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDBTuneSectorSize" func="yes">
+			<Overload retVal="nil/l_result">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDebug" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDegToRad" func="yes">
+			<Overload retVal="f_angle">
+				<Param name="n_angle" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDehighlightObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid/g_mode" />
+				<Param name="[g_permHighlight]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDeleteAttachment" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDeleteByLayer" func="yes">
+			<Overload retVal="x_cnt/nil">
+				<Param name="t_layerName/lt_layerName" />
+				<Param name="[nil/'fixed]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDeleteFillet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDeleteObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="[g_mode]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDeleteTaper" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDesignFlip" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDesignType" func="yes">
+			<Overload retVal="t_type/lt_type">
+				<Param name="g_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDetailLoad" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_filename" />
+				<Param name="point" />
+				<Param name="f_scale" />
+				<Param name="x_rotation" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDetailSave" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_filename" />
+				<Param name="l_bBox" />
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="[g_filledPads]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDiffPair" func="yes">
+			<Overload retVal="o_diffpair/nil">
+				<Param name="t_diffpair" />
+				<Param name="o_net1/t_net1" />
+				<Param name="o_net2/t_net2" />
+				<Param name="Modify" />
+				<Param name="o_diffpair/t_diffpair" />
+				<Param name="o_net1/t_net1" />
+				<Param name="o_net2/t_net2" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="Delete" />
+				<Param name="o_diffpair/t_diffpair/lo_diffpair" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDiffPairAuto" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDiffPairDBID" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDistance" func="yes">
+			<Overload retVal="f_distance">
+				<Param name="l_point1" />
+				<Param name="l_point2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDllCall" func="yes">
+			<Overload retVal="nil/x_value/lg_data">
+				<Param name="o_pluginFunc" />
+				<Param name="[g_arg1]" />
+				<Param name="..." />
+				<Param name="[g_arg10]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDllCallList" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDllClose" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_plugin" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDllDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDllDump" func="yes">
+			<Overload retVal="l_dllLoad/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDllOpen" func="yes">
+			<Overload retVal="o_plugin/nil">
+				<Param name="t_dllname" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDllSym" func="yes">
+			<Overload retVal="o_pluginFunc/nil">
+				<Param name="o_plugin" />
+				<Param name="t_symbolName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMBrowsePath" func="yes">
+			<Overload retVal="t_fileName/nil">
+				<Param name="t_adsFileType" />
+				<Param name="[t_title]" />
+				<Param name="[t_helpTag]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMClose" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDMDirectoryBrowse" func="yes">
+			<Overload retVal="t_dirName/nil">
+				<Param name="t_startingDirectory" />
+				<Param name="g_writeFlag" />
+				<Param name="[?helpTag t_helpTag]" />
+				<Param name="[?title t_title]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMFileBrowse" func="yes">
+			<Overload retVal="t_fileName/nil">
+				<Param name="t_fileType" />
+				<Param name="g_writeFlag" />
+				<Param name="[?defaultName t_defaultName]" />
+				<Param name="[?helpTag t_helpTag]" />
+				<Param name="[?directorySet g_directorySet]" />
+				<Param name="[?noDirectoryButton g_noDirectoryButton]" />
+				<Param name="[?mainFile g_mainFile]" />
+				<Param name="[?noSticky g_noSticky]" />
+				<Param name="[?title t_title]" />
+				<Param name="[?optFilters t_filters]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMFileError" func="yes">
+			<Overload retVal="nil/t_errorMessage">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMFileParts" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDMFindFile" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDMGetFile" func="yes">
+			<Overload retVal="t_name/nil">
+				<Param name="t_id" />
+				<Param name="t_name" />
+				<Param name="t_mode" />
+				<Param name="[t_prop]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMLibraryFileNames" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDMOpenFile" func="yes">
+			<Overload retVal="p_port/nil">
+				<Param name="t_id" />
+				<Param name="t_name" />
+				<Param name="t_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDMOpenLog" func="yes">
+			<Overload retVal="p_port/nil">
+				<Param name="t_program" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axldo" func="yes">
+			<Overload retVal="g_result">
+				<Param name="g_initList" />
+				<Param name="g_terminateList" />
+				<Param name="[g_body]" />
+			</Overload>
+			<Overload retVal="g_result">
+				<Param name="g_initList" />
+				<Param name="g_terminateList" />
+				<Param name="[g_body]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDrawObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDRCGetCount" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDRCItem" func="yes">
+			<Overload retVal="x_cnt/lo_drcDbid/nil">
+				<Param name="g_mode" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDRCUpdate" func="yes">
+			<Overload retVal="x_cnt/nil">
+				<Param name="g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDRCWaive" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_mode" />
+				<Param name="o_DrcDbid/lo_DrcDbid" />
+				<Param name="[t_comment]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlDRCWaiveGetCount" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlDynamicsObject" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlEmail" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_to" />
+				<Param name="t_cc/nil" />
+				<Param name="t_subject" />
+				<Param name="t_body" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterAngle" func="yes">
+			<Overload retVal="f_angle/nil">
+				<Param name="origin" />
+				<Param name="?prompts l_prompts" />
+				<Param name="?refPoint l_refPoint" />
+				<Param name="?angle f_angle" />
+				<Param name="?lockAngle g_lockAngle" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterBox" func="yes">
+			<Overload retVal="l_box/nil">
+				<Param name="?prompts l_prompt" />
+				<Param name="?points l_point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterEvent" func="yes">
+			<Overload retVal="r_eventId">
+				<Param name="l_eventMask" />
+				<Param name="t_prompt" />
+				<Param name="g_snap" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterPath" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?prompts l_prompt" />
+				<Param name="?points l_point" />
+				<Param name="?lastPath r_path" />
+				<Param name="?gridSnap g_gridSnap" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterPoint" func="yes">
+			<Overload retVal="l_point/nil">
+				<Param name="?prompts l_prompts" />
+				<Param name="?points l_points" />
+				<Param name="?gridSnap g_gridSnap" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEnterPolar" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlEnterString" func="yes">
+			<Overload retVal="t_string/nil">
+				<Param name="?prompts l_prompts" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEraseObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlEventSetStartPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[s_callback]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExportXmlDBRecords" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_fileName" />
+				<Param name="lt_parmGroups/nil" />
+			</Overload>
+			<Overload retVal="lt_parmGroups">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExtentDB" func="yes">
+			<Overload retVal="l_bBox/nil">
+				<Param name="[s_mode]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExtentLayout" func="yes">
+			<Overload retVal="l_bBox/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExtentSymbol" func="yes">
+			<Overload retVal="l_bBox">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExtractMap" func="yes">
+			<Overload retVal="t/l_dbid/nil">
+				<Param name="t_viewFile" />
+				<Param name="[s_applyFunc]" />
+				<Param name="[g_userData]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlExtractToFile" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_viewFile" />
+				<Param name="lt_resultFiles" />
+				<Param name="[lt_options]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlfcreate" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFillet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFilletConvert" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFilmCreate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_filmname" />
+				<Param name="?negative t/nil" />
+				<Param name="?undefineLineWidth f_width" />
+				<Param name="?sequence x_number" />
+				<Param name="?rotation x_angle" />
+				<Param name="?xOffset f_x" />
+				<Param name="?yOffset f_y" />
+				<Param name="?shapeBoundingBox f_value" />
+				<Param name="?mirrored t/nil" />
+				<Param name="?fullContact t/nil" />
+				<Param name="?suppressUnconnectPads t/nil" />
+				<Param name="?drawMissingPadApertures t/nil" />
+				<Param name="?useApertureRotation t/nil" />
+				<Param name="?suppressShapeFill t/nil" />
+				<Param name="?vectorBasedPad t/nil" />
+				<Param name="?drawHolesOnly t/nil" />
+				<Param name="?layers lt_layers" />
+				<Param name="?domains lt_domains" />
+				<Param name="?ipc2581 lt_ipcDomains" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFindPath" func="yes">
+			<Overload retVal="lo_dbid/llo_dbid/nil">
+				<Param name="o_oneDbid" />
+				<Param name="o_twoDbid" />
+				<Param name="[g_altPath]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFinishEnterFun" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFlushDisplay" func="yes">
+			<Overload retVal="t">
+				<Param name="[r_window]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormAutoResize" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormBNFDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormBuildPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="l_pairs" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormCallback" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormClearMouseActive" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormClose" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormColorize" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_form" />
+				<Param name="t_field" />
+				<Param name="g_option" />
+				<Param name="g_color" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormCreate" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormDefaultButton" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field/g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormDisplay" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormFlexDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormGetActiveField" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGetField" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGetFieldType" func="yes">
+			<Overload retVal="g_fieldType/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridBatch" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_cell" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridCancelPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridDeleteRows" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="x_row" />
+				<Param name="x_number" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormGridEvents" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormGridGetCell" func="yes">
+			<Overload retVal="r_cell/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="r_cell" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridInsertCol" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="r_formGridCol" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridInsertRows" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="x_row" />
+				<Param name="x_number" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridNewCell" func="yes">
+			<Overload retVal="r_cell">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridOption" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="s_name" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridOptions" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridReset" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridSelected" func="yes">
+			<Overload retVal="lx_selected/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridSelectedCnt" func="yes">
+			<Overload retVal="x_cnt/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridSetBatch" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="s_callback" />
+				<Param name="g_pvtData" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridSetSelectRows" func="yes">
+			<Overload retVal="x_cnt/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="x_min" />
+				<Param name="x_max" />
+				<Param name="g_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormGridUpdate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormIntroDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormInvalidateField" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormIsFieldEditable" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormIsFieldVisible" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListAddItem" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_listItem/lt_listItems/nil" />
+				<Param name="g_index" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListDeleteAll" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListDeleteItem" func="yes">
+			<Overload retVal="t/x_index/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_listItem/x_index/lt_listItem/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListGetItem" func="yes">
+			<Overload retVal="t_listItem/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="x_index" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListGetSelCount" func="yes">
+			<Overload retVal="x_count/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListGetSelItems" func="yes">
+			<Overload retVal="lt_selected/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListOptions" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormListSelAll" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_set" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormListSelect" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_listItem/x_position/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormMsg" func="yes">
+			<Overload retVal="t_msg/nil">
+				<Param name="r_form" />
+				<Param name="t_messageLabel" />
+				<Param name="[g_arg1 ...]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormRestoreField" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetActiveField" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetDecimal" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_form" />
+				<Param name="g_field" />
+				<Param name="x_decimalPlaces" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetEventAction" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="g_callback" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetField" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_value/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetFieldEditable" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_editable" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetFieldLimits" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_form" />
+				<Param name="t_field" />
+				<Param name="g_min" />
+				<Param name="g_max" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetFieldVisible" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="x_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetInfo" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormSetMouseActive" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTest" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlFormTitle" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_title" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewAddItem" func="yes">
+			<Overload retVal="g_hItem/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_label" />
+				<Param name="g_hParent" />
+				<Param name="g_hInsertAfter" />
+				<Param name="[g_multiSelectF]" />
+				<Param name="[g_hLeafImage]" />
+				<Param name="[g_hOpenImage]" />
+				<Param name="[g_hClosedImage]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewChangeImages" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+				<Param name="[g_hLeafImage]" />
+				<Param name="[g_hOpenImage]" />
+				<Param name="[g_hClosedImage]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewChangeLabel" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+				<Param name="t_label" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewGetImages" func="yes">
+			<Overload retVal="l_hImage/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewGetLabel" func="yes">
+			<Overload retVal="t_label/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewGetParents" func="yes">
+			<Overload retVal="lg_hItem/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewGetSelectState" func="yes">
+			<Overload retVal="x_selectState">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewLoadBitmaps" func="yes">
+			<Overload retVal="l_hImage/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="lt_bitmaps" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="s_option" />
+				<Param name="g_hItem" />
+				<Param name="[s_data]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlFormTreeViewSetSelectState" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="g_hItem" />
+				<Param name="g_state" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeo2Str" func="yes">
+			<Overload retVal="t_result/nil">
+				<Param name="f_dbrep/point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoArcCenterAngle" func="yes">
+			<Overload retVal="l_center/nil">
+				<Param name="l_startPoint" />
+				<Param name="l_endPoint" />
+				<Param name="f_angle" />
+				<Param name="[g_clockwise]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoArcCenterRadius" func="yes">
+			<Overload retVal="l_center/nil">
+				<Param name="l_startPoint" />
+				<Param name="l_endPoint" />
+				<Param name="f_radius" />
+				<Param name="[g_clockwise]" />
+				<Param name="[g_bigArc]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoEqual" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="f_one" />
+				<Param name="f_two" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoPointInShape" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point" />
+				<Param name="o_dbid/o_polygon" />
+				<Param name="[g_include_voids]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoPointsEqual" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point1" />
+				<Param name="l_point2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGeoPointShapeInfo" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlGeoRotatePt" func="yes">
+			<Overload retVal="l_xyResult/nil">
+				<Param name="f_angle" />
+				<Param name="l_xy" />
+				<Param name="l_origin/nil" />
+				<Param name="[mirror]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetActiveLayer" func="yes">
+			<Overload retVal="t_layer">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetActiveTextBlock" func="yes">
+			<Overload retVal="_textBlock">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetAlias" func="yes">
+			<Overload retVal="t_value/nil">
+				<Param name="t_alias/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetAllAttachmentNames" func="yes">
+			<Overload retVal="l_attachment/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetAllViaList" func="yes">
+			<Overload retVal="lo_padstack_dbid">
+				<Param name="[g_attrVias]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetAllVisibleProfiles" func="yes">
+			<Overload retVal="list of profiles / nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetAttachment" func="yes">
+			<Overload retVal="o_attachment/nil">
+				<Param name="t_attachmentId" />
+				<Param name="[s_dataFormat]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetCmdSupplementalData" func="yes">
+			<Overload retVal="r_suppData/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDieData" func="yes">
+			<Overload retVal="diedata defstruct/nil">
+				<Param name="g_dieId" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDieStackData" func="yes">
+			<Overload retVal="stackdata defstruct/nil">
+				<Param name="g_stackArg" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDieStackMemberSet" func="yes">
+			<Overload retVal="list of diestack member defstructs/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDieStackNames" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlGetDieType" func="yes">
+			<Overload retVal="t_dieType">
+				<Param name="o_componentDBID" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDrawingName" func="yes">
+			<Overload retVal="t_drawingPathName">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetDynamicsSegs" func="yes">
+			<Overload retVal="l_pointList/nil">
+				<Param name="l_point1" />
+				<Param name="l_point2" />
+				<Param name="r_lastPath/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetFindFilter" func="yes">
+			<Overload retVal="lt_filters/nil">
+				<Param name="[onEnabledF]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetFuncKey" func="yes">
+			<Overload retVal="t_value/nil">
+				<Param name="t_alias/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetImpedance" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlGetIposerData" func="yes">
+			<Overload retVal="iposerdata defstruct/nil">
+				<Param name="g_iposerId" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetLastEnterPoint" func="yes">
+			<Overload retVal="l_point/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetLineLock" func="yes">
+			<Overload retVal="g_currentValue/ls_names">
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetMetalUsageForLayer" func="yes">
+			<Overload retVal="resultStruct/nil">
+				<Param name="l_layers" />
+				<Param name="[l_extents]" />
+				<Param name="[g_positive]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetModuleInstanceDefinition" func="yes">
+			<Overload retVal="t_moddef/nil">
+				<Param name="o_modinst" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetModuleInstanceLocation" func="yes">
+			<Overload retVal="l_loc/nil">
+				<Param name="o_modinst" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetModuleInstanceLogicMethod" func="yes">
+			<Overload retVal="i_logic/nil">
+				<Param name="o_modinst" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetModuleInstanceNetExceptions" func="yes">
+			<Overload retVal="l_nets/nil">
+				<Param name="o_modinst" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetParam" func="yes">
+			<Overload retVal="o_paramDbid/nil">
+				<Param name="t_parm_name" />
+			</Overload>
+			<Overload retVal="lt_params">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetSelSet" func="yes">
+			<Overload retVal="lo_dbid/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetSelSetCount" func="yes">
+			<Overload retVal="x_selCount/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetSpacerData" func="yes">
+			<Overload retVal="spacerdata defstruct/nil">
+				<Param name="g_spacerId" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetTrapBox" func="yes">
+			<Overload retVal="l_window/nil">
+				<Param name="l_point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetVariable" func="yes">
+			<Overload retVal="t_value/nil">
+				<Param name="t_variable/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetVariableList" func="yes">
+			<Overload retVal="t_value/lt_value/nil">
+				<Param name="t_variable/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetWireProfileColor" func="yes">
+			<Overload retVal="color index / nil">
+				<Param name="t_profile" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetWireProfileDefinition" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlGetWireProfileDirection" func="yes">
+			<Overload retVal="'FORWARD'/'REVERSE'/nil">
+				<Param name="profileName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetWireProfileVisible" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_profile" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetXSection" func="yes">
+			<Overload retVal="ll_layers/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwBitmap" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="t_bitmap" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwCircle" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="l_origin," />
+				<Param name="x_radius" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwInit" func="yes">
+			<Overload retVal="r_graphics/nil">
+				<Param name="r_form," />
+				<Param name="t_field," />
+				<Param name="t_func" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwLine" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="l_vertices" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwMapWindow" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="x_hgt," />
+				<Param name="x_width" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwPoly" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="l_vertices" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwRectangle" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="l_upper_left," />
+				<Param name="l_lower_right" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwText" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics," />
+				<Param name="l_origin," />
+				<Param name="t_text" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGRPDrwUpdate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_graphics" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlHighlightObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[lo_dbid]" />
+				<Param name="[g_permHighlight]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlHistory" func="yes">
+			<Overload retVal="t">
+				<Param name="[x_num]" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="Read or write history to a file" />
+				<Param name="s_operation" />
+				<Param name="t_filename" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlHttp" func="yes">
+			<Overload retVal="t">
+				<Param name="t_url" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIgnoreFixed" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlImpdedanceGetLayerBroadsideDPImp" func="yes">
+			<Overload retVal="f_diffImpedance/nil">
+				<Param name="t_layer1/x_layerNum1" />
+				<Param name="t_layer2/x_layerNum2" />
+				<Param name="f_width" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImpdedanceGetLayerBroadsideDPWidth" func="yes">
+			<Overload retVal="f_lineWidth/nil">
+				<Param name="t_layer1/x_layerNum1" />
+				<Param name="t_layer2/x_layerNum2" />
+				<Param name="f_diffImpedance" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImpdedanceGetLayerEdgeDPImp" func="yes">
+			<Overload retVal="f_diffImpedance/nil">
+				<Param name="t_layer/x_layerNum" />
+				<Param name="f_spacing" />
+				<Param name="f_width" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImpdedanceGetLayerEdgeDPSpacing" func="yes">
+			<Overload retVal="f_spacing/nil">
+				<Param name="t_layer/x_layerNum" />
+				<Param name="f_width" />
+				<Param name="f_diffImp" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImpdedanceGetLayerEdgeDPWidth" func="yes">
+			<Overload retVal="f_width/nil">
+				<Param name="t_layer/x_layerNum" />
+				<Param name="f_spacing" />
+				<Param name="f_diffImp" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImpedance2Width" func="yes">
+			<Overload retVal="f_lineWidth/nil">
+				<Param name="t_layer/x_layerNum" />
+				<Param name="f_impedance" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImportWireProfileDefinitions" func="yes">
+			<Overload retVal="x/nil">
+				<Param name="xmlFileName" />
+				<Param name="setAsMaster" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlImportXmlDBRecords" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_fileName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlInTrigger" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlInTriggerFunc" func="yes">
+			<Overload retVal="s_triggerFunc/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsAttachment" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_attachment" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsBetween" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlIsCustomColored" func="yes">
+			<Overload retVal="x_customColor/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsDBIDType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsDebug" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsDummyNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="net_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsEtchLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsFormType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_form" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsGridCellType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_cell" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsHighlighted" func="yes">
+			<Overload retVal="x_highlightColor/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsitFill" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsLayerNegative" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layerName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsPinUnused" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="pin_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsPointInsideBox" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point" />
+				<Param name="l_box" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsPointOnLine" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point" />
+				<Param name="ll_line" />
+				<Param name="[f_nearNess]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsPolyType" func="yes">
+			<Overload retVal="t/ni">
+				<Param name="g_polygon" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsProductLineActive" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlIsProductStarted" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlIsProtectAlias" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_alias" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsSymbolEditor" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsViewFileType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_userType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlIsVisibleLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlJournal" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlKillDesign" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLastPick" func="yes">
+			<Overload retVal="xy">
+				<Param name="l_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLastPickIsSnapped" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerCreateCrossSection" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_Prev_layerName" />
+				<Param name="t_layerType" />
+				<Param name="t_materialType" />
+				<Param name="[t_subclassName]" />
+				<Param name="[t_planeType]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerCreateNonConductor" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layerName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layerName/x_layerNumber" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerGet" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerPriorityClearAll" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerPriorityGet" func="yes">
+			<Overload retVal="x_priority/t_mapClass/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerPriorityRestoreAll" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerPrioritySaveAll" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerPrioritySet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+				<Param name="x_priority" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerSet" func="yes">
+			<Overload retVal="o_dbid/nil">
+				<Param name="o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLayerViaLabel" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlLicDefaultVersion" func="yes">
+			<Overload retVal="f_version">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLicFeatureExists" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_license" />
+				<Param name="[f_version]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLicIsProductEnabled" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_license" />
+			</Overload>
+			<Overload retVal="lt_licenses">
+				<Param name="`all" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLineSlope" func="yes">
+			<Overload retVal="f_slope">
+				<Param name="ll_line" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLineXLine" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlLoadPadstack" func="yes">
+			<Overload retVal="o_dbid">
+				<Param name="t_padname" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLoadSymbol" func="yes">
+			<Overload retVal="o_dbidSymDef/nil">
+				<Param name="t_symKind" />
+				<Param name="t_symName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlLogHeader" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="p_port" />
+				<Param name="t_titleString" />
+				<Param name="[t_prefix]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMakeDynamicsPath" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="l_formatedList" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMapClassName" func="yes">
+			<Overload retVal="t_newName/lt_newName">
+				<Param name="t_oldName/lt_oldName" />
+				<Param name="[g_mapToPCB]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMatchGroupAdd" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_mgdbid/t_mgName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMatchGroupCreate" func="yes">
+			<Overload retVal="o_mgdbid">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMatchGroupDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_mgdbid/t_mgName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMatchGroupProp" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_mgdbid/t_mgName" />
+				<Param name="o_dbid" />
+				<Param name="t_value/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMatchGroupRemove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_mgdbid/t_mgName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMaterialGet" func="yes">
+			<Overload retVal="lt_materials">
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="og_material">
+				<Param name="t_materialName" />
+			</Overload>
+			<Overload retVal="log_materials">
+				<Param name="'all" />
+			</Overload>
+			<Overload retVal="t_file">
+				<Param name="'file" />
+			</Overload>
+			<Overload retVal="t_pathToFile">
+				<Param name="'path" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMathConstants" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlMathDotProduct" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlMemSize" func="yes">
+			<Overload retVal="x_size">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMenuDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlMeterCreate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_title" />
+				<Param name="t_infoString" />
+				<Param name="g_enableCancel" />
+				<Param name="[t_formname]" />
+				<Param name="[t_infoString2]" />
+				<Param name="[g_formCallback]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMeterDestroy" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMeterIsCancelled" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMeterUpdate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_percentDone" />
+				<Param name="t_infoString" />
+				<Param name="[t_infoStr2]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMidPointArc" func="yes">
+			<Overload retVal="l_midPoint">
+				<Param name="ll_endPoints" />
+				<Param name="l_center" />
+				<Param name="f_radius" />
+				<Param name="g_clockwise" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMidPointLine" func="yes">
+			<Overload retVal="l_midPoint">
+				<Param name="ll_line" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMiniStatusLoad" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlMiniStatusReset" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMKS2UU" func="yes">
+			<Overload retVal="f_value/nil">
+				<Param name="t_mksString" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMKSAlias" func="yes">
+			<Overload retVal="t_alias">
+				<Param name="t_mksAlias" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMKSConvert" func="yes">
+			<Overload retVal="f_output/nil">
+				<Param name="n_input" />
+				<Param name="t_inUnits" />
+				<Param name="[t_outUnits]" />
+			</Overload>
+			<Overload retVal="f_output/nil">
+				<Param name="n_input" />
+				<Param name="t_inUnits" />
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="f_output/nil">
+				<Param name="n_input" />
+				<Param name="nil" />
+				<Param name="t_outUnits" />
+			</Overload>
+			<Overload retVal="f_output/nil">
+				<Param name="t_input" />
+				<Param name="[t_outUnits]" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="nil" />
+				<Param name="t_inUnits" />
+			</Overload>
+			<Overload retVal="f_output/nil">
+				<Param name="n_input" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMKSStr2UU" func="yes">
+			<Overload retVal="t_mksString/nil">
+				<Param name="t_String" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMPythag" func="yes">
+			<Overload retVal="f_distance/nil">
+				<Param name="l_pt1" />
+				<Param name="l_pt2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgCancelPrint" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgCancelSeen" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgClear" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextClear" func="yes">
+			<Overload retVal="t">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextFinish" func="yes">
+			<Overload retVal="t">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextGet" func="yes">
+			<Overload retVal="lt_format_strings/nil">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextGetString" func="yes">
+			<Overload retVal="lt_messages/nil">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextInBuf" func="yes">
+			<Overload retVal="t">
+				<Param name="r_context" />
+				<Param name="t_format_string" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextPrint" func="yes">
+			<Overload retVal="t">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextRemove" func="yes">
+			<Overload retVal="t">
+				<Param name="r_context" />
+				<Param name="t_format_string" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextStart" func="yes">
+			<Overload retVal="r_context">
+				<Param name="g_format_string" />
+				<Param name="[g_arg1 ...]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgContextTest" func="yes">
+			<Overload retVal="x_class">
+				<Param name="r_context" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgPut" func="yes">
+			<Overload retVal="t">
+				<Param name="g_message_format" />
+				<Param name="[g_arg1 ...]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgSet" func="yes">
+			<Overload retVal="t">
+				<Param name="x_class" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMsgTest" func="yes">
+			<Overload retVal="x_class">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMUniVector" func="yes">
+			<Overload retVal="l_uniPt1">
+				<Param name="l_pt1" />
+				<Param name="l_pt2" />
+				<Param name="[f_length]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMXYAdd" func="yes">
+			<Overload retVal="l_pt/nil">
+				<Param name="l_pt1" />
+				<Param name="l_pt2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMXYMult" func="yes">
+			<Overload retVal="l_pt/nil">
+				<Param name="l_uniVec" />
+				<Param name="f_factor" />
+				<Param name="[l_origin]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlMXYMultAdd" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlMXYSub" func="yes">
+			<Overload retVal="l_pt/nil">
+				<Param name="l_pt1" />
+				<Param name="l_pt2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetClassAdd" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_netclassdbid/t_netclassName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetClassCreate" func="yes">
+			<Overload retVal="o_dbid">
+				<Param name="t_name" />
+				<Param name="g_domain/lg_domain" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetClassDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_netclassdbid/t_netclassName/lg_netclassdbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetClassGet" func="yes">
+			<Overload retVal="o_netclass">
+				<Param name="o_dbid" />
+				<Param name="s_domain" />
+				<Param name="g_hierarchal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetClassRemove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_netclassdbid/t_netclassName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetEcsetValueGet" func="yes">
+			<Overload retVal="t_cnsValue/nil">
+				<Param name="o_itemDbid/t_netName" />
+				<Param name="t_cnsName/s_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetSched" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlNetsSched" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOK2Void" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOKToProceed" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[t_echoMsg]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOpenDesign" func="yes">
+			<Overload retVal="t_design/nil">
+				<Param name="?design t_design" />
+				<Param name="?mode t_mode" />
+				<Param name="?noMru g_noMru" />
+				<Param name="?ignoreLock g_noMru" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOpenDesignForBatch" func="yes">
+			<Overload retVal="t_design/nil">
+				<Param name="t_design" />
+				<Param name="t_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOpenFindFilter" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSBackSlash" func="yes">
+			<Overload retVal="t_directory/nil">
+				<Param name="t_directory" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSControl" func="yes">
+			<Overload retVal="g_currentValue/ls_names">
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSFileCopy" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_src" />
+				<Param name="t_dest" />
+				<Param name="g_append" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSFileMove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_src" />
+				<Param name="t_dest" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSNtp" func="yes">
+			<Overload retVal="x_nwtime/t_nwtime/t_server/nil">
+				<Param name="s_mode" />
+				<Param name="t_serverName/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlOSSlash" func="yes">
+			<Overload retVal="t_directory/nil">
+				<Param name="t_directory" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPackageDesignCheckAddCategory" func="yes">
+			<Overload retVal="g_category / nil">
+				<Param name="t_name" />
+				<Param name="t_bitmap" />
+				<Param name="t_description" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPackageDesignCheckAddCheck" func="yes">
+			<Overload retVal="g_check / nil">
+				<Param name="t_category" />
+				<Param name="t_name" />
+				<Param name="t_bitmap" />
+				<Param name="t_description" />
+				<Param name="s_runCommand" />
+				<Param name="g_fixable" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPackageDesignCheckDrcError" func="yes">
+			<Overload retVal="nil">
+				<Param name="l_location" />
+				<Param name="o_dbids" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPackageDesignCheckLogError" func="yes">
+			<Overload retVal="nil">
+				<Param name="t_errorString" />
+				<Param name="g_fixed" />
+				<Param name="g_location" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadDbidDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPadFigureTypes" func="yes">
+			<Overload retVal="lt_names">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadInst" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPadOnLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid" />
+				<Param name="t_layer/x_layerNumber" />
+				<Param name="[g_noPadSuppress]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadstackEdit" func="yes">
+			<Overload retVal="l_attributes">
+				<Param name="nil" />
+				<Param name="nil" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="o_dbidPadstack/t_Padstack" />
+				<Param name="s_name" />
+				<Param name="g_value" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="o_dbidPadstack/t_Padstack" />
+				<Param name="[[s_name g_value] .... ]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadstackSetType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_padstack/t_padstack" />
+				<Param name="g_uviaBbvia" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="o_padstack/t_padstack" />
+				<Param name="g_type" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadstackToDisk" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_padName" />
+				<Param name="t_outPadName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadstackUsageTypes" func="yes">
+			<Overload retVal="lt_names">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadSuppressGet" func="yes">
+			<Overload retVal="ll_LayerPadSuppress">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadSuppressOkLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer/x_layerNumber" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadSuppressSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_mode" />
+				<Param name="ll_LayerPadSuppress/'all/'none/nil" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="g_mode" />
+				<Param name="t_layer/x_layerNumber" />
+				<Param name="ls_options" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPadUserMaskLayers" func="yes">
+			<Overload retVal="lt_names/x_cnt">
+				<Param name="['max]" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'create" />
+				<Param name="t_user_mask_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlParamDesignDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlParamDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlParamFilletDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlParamTestprepDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPath" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPathArcAngle" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="r_path" />
+				<Param name="f_width" />
+				<Param name="l_end_point" />
+				<Param name="g_clockwise" />
+				<Param name="f_angle" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathArcCenter" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="r_path" />
+				<Param name="f_width" />
+				<Param name="l_end_point" />
+				<Param name="g_clockwise" />
+				<Param name="l_center" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathArcRadius" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="r_path" />
+				<Param name="f_width" />
+				<Param name="l_end_point" />
+				<Param name="g_clockwise" />
+				<Param name="g_bigarc" />
+				<Param name="f_radius" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathGetLastPathSeg" func="yes">
+			<Overload retVal="r_pathList/nil">
+				<Param name="r_path" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathGetPathSegs" func="yes">
+			<Overload retVal="r_pathList/nil">
+				<Param name="r_path" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathGetWidth" func="yes">
+			<Overload retVal="f_width/nil">
+				<Param name="r_path" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathLine" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="r_path" />
+				<Param name="f_width" />
+				<Param name="l_end_point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathOffset" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPathSegGetArcCenter" func="yes">
+			<Overload retVal="l_point/nil">
+				<Param name="r_pathSeg" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathSegGetArcClockwise" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_pathSeg" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathSegGetEndPoint" func="yes">
+			<Overload retVal="l_end_point/nil">
+				<Param name="r_pathSeg" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathSegGetWidth" func="yes">
+			<Overload retVal="f_width/nil">
+				<Param name="r_pathSeg" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathSetLineLock" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPathStart" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="l_points" />
+				<Param name="[f_width]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPathStartCircle" func="yes">
+			<Overload retVal="r_path/nil">
+				<Param name="l_location" />
+				<Param name="f_width" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPdfView" func="yes">
+			<Overload retVal="t">
+				<Param name="t_pdfFile" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPinExport" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_includeTextLocation" />
+				<Param name="[t_csvfile]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPinImport" func="yes">
+			<Overload retVal="l_cnt/nil">
+				<Param name="t_csvFile" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPinPair" func="yes">
+			<Overload retVal="o_pinpair">
+				<Param name="o_pin1/t_pin1" />
+				<Param name="o_pin2/t_pin2" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="Delete" />
+				<Param name="o_pinpair/lo_pinpair" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPinPairSeek" func="yes">
+			<Overload retVal="o_pinpair/nil">
+				<Param name="o_pin1" />
+				<Param name="o_pin2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPinsOfNet" func="yes">
+			<Overload retVal="lo_pins/nil">
+				<Param name="o_net/t_net" />
+				<Param name="g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyErrorGet" func="yes">
+			<Overload retVal="t_error/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyExpand" func="yes">
+			<Overload retVal="lo_polygon/nil">
+				<Param name="o_polygon1/lo_polygon1" />
+				<Param name="f_expandValue" />
+				<Param name="s_expandType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyFromDB" func="yes">
+			<Overload retVal="lo_polygon">
+				<Param name="o_dbid/r_path" />
+				<Param name="?endCapType s_endCapType" />
+				<Param name="?layer t_layer" />
+				<Param name="?padType s_padType" />
+				<Param name="?holes t/nil" />
+				<Param name="?line2poly t/nil" />
+				<Param name="?xhatch t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyFromHole" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlPolyMemUse" func="yes">
+			<Overload retVal="lx_polyCounts">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyOffset" func="yes">
+			<Overload retVal="o_polygon">
+				<Param name="o_polygon/lo_polygon" />
+				<Param name="l_xy" />
+				<Param name="[g_copy]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPolyOperation" func="yes">
+			<Overload retVal="lo_polygon/nil">
+				<Param name="o_polygon1/lo_polygon1" />
+				<Param name="o_polygon2/lo_polygon2" />
+				<Param name="s_operation" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPPrint" func="yes">
+			<Overload retVal="t_pname">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPrintDbid" func="yes">
+			<Overload retVal="t">
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="[o_port]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlProtectAlias" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_alias" />
+				<Param name="t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlPurgePadstacks" func="yes">
+			<Overload retVal="x_cnt">
+				<Param name="S_mode" />
+				<Param name="t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRadToDeg" func="yes">
+			<Overload retVal="f_angle">
+				<Param name="n_angle" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRatsnestBlank" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="rd_net" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRatsnestDisplay" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="rd_net" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlReadOnlyVariable" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_variable" />
+				<Param name="[g_Enable]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRecursiveDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_directory" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRefreshSymbol" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_symName/o_SymDef" />
+				<Param name="[g_options]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRegexpIs" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_exp" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRegionAdd" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_regiondbid/t_regionName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRegionCreate" func="yes">
+			<Overload retVal="o_dbid">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRegionDelete" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_regiondbid/t_regionName/lg_regiondbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRegionRemove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_regiondbid/t_regionName" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRemoveNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_name/o_netDbid" />
+				<Param name="[g_ripup]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRenameDesign" func="yes">
+			<Overload retVal="t_design/nil">
+				<Param name="t_design" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRenameNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_old_name" />
+				<Param name="t_new_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRenameRefdes" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_oldName/o_oldCompDbid" />
+				<Param name="t_newName/o_newCompDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlReplacePadstack" func="yes">
+			<Overload retVal="lo_dbid">
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="o_padstackdbid/t_padname" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlReportList" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlReportRegister" func="yes">
+			<Overload retVal="t">
+				<Param name="g_reportCallback" />
+				<Param name="t_description" />
+				<Param name="t_title" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlReratNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_netName/o_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlRunBatchDBProgram" func="yes">
+			<Overload retVal="t/x_error">
+				<Param name="t_prog" />
+				<Param name="t_cmdFmt" />
+				<Param name="[?logfile t_logfile]" />
+				<Param name="[?startMsg t_startMsg]" />
+				<Param name="[?reloadDB t/nil]" />
+				<Param name="[?noUnload t/nil]" />
+				<Param name="[?silent t/nil]" />
+				<Param name="[?noProgress t/nil]" />
+				<Param name="[?warnProgram t/nil]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSaveDesign" func="yes">
+			<Overload retVal="t_design/nil">
+				<Param name="?design t_design" />
+				<Param name="?mode t_option" />
+				<Param name="?noMru g_noMru" />
+				<Param name="?noConfirm g_noConfirm" />
+				<Param name="?writeModel g_write" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSaveEnable" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[g_saveEnable]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlScheduleNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_net/t_net" />
+				<Param name="t_schedule/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlScheduleNet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_net/t_net" />
+				<Param name="t_schedule/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSegDelayAndZ0" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSelect" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?firstEventCallback s_callback" />
+				<Param name="?groupMode t/nil" />
+				<Param name="?prompt t_prompt" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSelectByName" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="t_objectType" />
+				<Param name="t_name/lt_name" />
+				<Param name="[g_wildcard]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSelectByProperty" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="t_objectType" />
+				<Param name="t_property" />
+				<Param name="[t_value]" />
+				<Param name="[g_regularExpression]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetActiveLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetAlias" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_alias" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetAllProfilesVisible" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="visible" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetAttachment" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSetBondWireProfile" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="bondWires" />
+				<Param name="profileName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetDefaultDieInformation" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="comp" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetDieData" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_dieId" />
+				<Param name="s_dataType" />
+				<Param name="g_newValue" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetDieStackData" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSetDieType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_componentDBID" />
+				<Param name="t_dieType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetDynamicsMirror" func="yes">
+			<Overload retVal="g_oldmirror">
+				<Param name="g_mirror" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetDynamicsRotation" func="yes">
+			<Overload retVal="f_oldangle">
+				<Param name="f_angle/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetFindFilter" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?enabled lt_enabled" />
+				<Param name="?onButtons lt_filterOn" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetFunckey" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_alias" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetIposerData" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_iposerId" />
+				<Param name="s_dataType" />
+				<Param name="g_newValue" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetLineLock" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?arcEnable g_arcEnable" />
+				<Param name="?lockAngle f_lockAngle" />
+				<Param name="?minRadius f_minRadius" />
+				<Param name="?length45 f_length45" />
+				<Param name="?fixed45 g_fixed45" />
+				<Param name="?lengthRadius f_lenghtRadius" />
+				<Param name="?fixedRadius g_fixedRadius" />
+				<Param name="?lockTangent g_lockTangent" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetParam" func="yes">
+			<Overload retVal="rd_paramDbid/nil">
+				<Param name="od_paramDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetPlaneType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_subclassName" />
+				<Param name="t_planeType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetRotateIncrement" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="?angular f_angular" />
+				<Param name="?radial f_radial" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetSpacerData" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_spacerId" />
+				<Param name="s_dataType" />
+				<Param name="g_newValue" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetSymbolType" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_symbolType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetVariable" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_variable" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetVariableFile" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_variable" />
+				<Param name="g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetWireProfileColor" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_profile" />
+				<Param name="n_color" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSetWireProfileVisible" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_profile" />
+				<Param name="g_visible" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeAutoVoid" func="yes">
+			<Overload retVal="lo_shapeIds/nil">
+				<Param name="o_shapeId" />
+				<Param name="[s_options/ls_options]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeChangeDynamicType" func="yes">
+			<Overload retVal="o_dynShapeId/l_staticShapeId/nil">
+				<Param name="o_shapeId" />
+				<Param name="g_dynamic" />
+				<Param name="g_msgs" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeDeleteVoids" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_shapeId" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="o_voidId/lo_voidid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeDynamicUpdate" func="yes">
+			<Overload retVal="x_ood/nil">
+				<Param name="o_shapeDbid/nil" />
+				<Param name="g_force" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeMerge" func="yes">
+			<Overload retVal="o_dynShapeId/l_staticShapeId/nil">
+				<Param name="o_shapeId" />
+				<Param name="lo_shapes" />
+				<Param name="g_options/lg_options" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShapeRaisePriority" func="yes">
+			<Overload retVal="x_priority/nil">
+				<Param name="o_shapeId" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShell" func="yes">
+			<Overload retVal="t">
+				<Param name="t_command" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShellPost" func="yes">
+			<Overload retVal="t">
+				<Param name="t_command" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShoveItems" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_itemList" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShoveSetParams" func="yes">
+			<Overload retVal="nil">
+				<Param name="l_params" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShowObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlShowObjectToFile" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSingleSelectBox" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[l_bBox]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSingleSelectName" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_nameType" />
+				<Param name="l_names" />
+				<Param name="[g_wildcard]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSingleSelectObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSingleSelectPoint" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_point" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSleep" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_time" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSmoothDesign" func="yes">
+			<Overload retVal="x_change">
+				<Param name="lx_numPasses" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSmoothItems" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSmoothSetParams" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_params" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSnapToObject" func="yes">
+			<Overload retVal="xy/nil">
+				<Param name="g_mode" />
+				<Param name="xy" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSort" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_infile" />
+				<Param name="t_outfile" />
+				<Param name="[t_sortfields]" />
+				<Param name="[t_sort_options]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetClose" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetDefineCell" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="x_row" />
+				<Param name="x_col" />
+				<Param name="t_style" />
+				<Param name="t_type" />
+				<Param name="t_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetDoc" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetCell" func="yes">
+			<Overload retVal="g_cellData / nil">
+				<Param name="x_row" />
+				<Param name="x_col" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetRGBColorString" func="yes">
+			<Overload retVal="t_rgb / nil">
+				<Param name="x_red" />
+				<Param name="x_green" />
+				<Param name="x_blue" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetRGBForNamedColor" func="yes">
+			<Overload retVal="t_rgb / nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetStyles" func="yes">
+			<Overload retVal="l_styles / nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetWorksheets" func="yes">
+			<Overload retVal="l_worksheets / nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetGetWorksheetSize" func="yes">
+			<Overload retVal="l_rowsColumns/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetInit" func="yes">
+			<Overload retVal="t / nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetRead" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_fileName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetReadDelimited" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_fileName" />
+				<Param name="t_delimiter" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetDefineCell" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="x_row" />
+				<Param name="x_col" />
+			</Overload>
+			<Overload retVal="t / nil">
+				<Param name="x_row" />
+				<Param name="x_col" />
+				<Param name="t_style" />
+				<Param name="t_type" />
+				<Param name="t_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetCellProp" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_propName" />
+				<Param name="t_propVal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetColumnProp" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="x_column" />
+				<Param name="t_propName" />
+				<Param name="t_propVal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetDocProp" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_propName" />
+				<Param name="t_propVal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetRowProp" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="x_row" />
+				<Param name="t_propName" />
+				<Param name="t_propVal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetStyle" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_id" />
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetStyleBorder" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_position" />
+				<Param name="t_color" />
+				<Param name="t_lineStyle" />
+				<Param name="t_weight" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetStyleParent" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_parent" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetStyleProp" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_type" />
+				<Param name="t_propName" />
+				<Param name="t_propVal" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetSetWorksheet" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_name" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSpreadsheetWrite" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="t_fileName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlStrcmpAlpNum" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_str1" />
+				<Param name="t_str2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlStringCSVParse" func="yes">
+			<Overload retVal="lt_string/nil">
+				<Param name="t_string" />
+				<Param name="[g_stripWhite]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlStringRemoveSpaces" func="yes">
+			<Overload retVal="t_modString/nil">
+				<Param name="t_string" />
+			</Overload>
+			<Overload retVal="lt_modString/nil">
+				<Param name="lt_string" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubclasses" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlSubclassFormPopup" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_form" />
+				<Param name="t_field" />
+				<Param name="t_class" />
+				<Param name="nil/lt_subclass" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubclassRoute" func="yes">
+			<Overload retVal="lt_subclasses">
+				<Param name="?field s_name" />
+				<Param name="?value g_value" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubSelectAll" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubSelectBox" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[l_bBox]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubSelectName" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_nameType" />
+				<Param name="l_names" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubSelectObject" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSubSelectPoint" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="[l_point]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSymbolAttach" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_symInstDbid" />
+				<Param name="o_dbid/lo_dbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlSymbolDetach" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_symInstDbid" />
+				<Param name="o_dbid/lo_dbid/g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTechnologyType" func="yes">
+			<Overload retVal="t_technology">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTempDirectory" func="yes">
+			<Overload retVal="t_directoryName">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTempFile" func="yes">
+			<Overload retVal="t_tempFileName">
+				<Param name="[g_local]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTempFileRemove" func="yes">
+			<Overload retVal="t">
+				<Param name="t_filename" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTestPoint" func="yes">
+			<Overload retVal="t/nil/s_error">
+				<Param name="o_dbid" />
+				<Param name="top|bottom|nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlText2Lines" func="yes">
+			<Overload retVal="llr_path/nil">
+				<Param name="o_textDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTextOrientationCopy" func="yes">
+			<Overload retVal="orient/nil">
+				<Param name="o_textDbid" />
+				<Param name="[orient]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTransformObject" func="yes">
+			<Overload retVal="lo_dbid/nil">
+				<Param name="lo_dbid/o_dbid" />
+				<Param name="?move l_deltaPoint" />
+				<Param name="?mirror t/nil/'GEOMETRY" />
+				<Param name="?angle f_angle" />
+				<Param name="?origin l_rotatePoint" />
+				<Param name="?allOrNone t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTriggerClear" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="s_trigger" />
+				<Param name="s_function" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTriggerPrint" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlTriggerSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="s_trigger" />
+				<Param name="s_function" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUICmdPopupSet" func="yes">
+			<Overload retVal="r_prevPopup">
+				<Param name="r_popup" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIColorDialog" func="yes">
+			<Overload retVal="l_rgb/nil">
+				<Param name="r_window/nil" />
+				<Param name="l_rgb" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIConfirm" func="yes">
+			<Overload retVal="t">
+				<Param name="t_message" />
+				<Param name="[s_level]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIConfirmEx" func="yes">
+			<Overload retVal="t">
+				<Param name="t_message" />
+				<Param name="t_key/nil" />
+				<Param name="[s_level]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIControl" func="yes">
+			<Overload retVal="g_currentValue/ls_names">
+				<Param name="s_name" />
+				<Param name="[g_value]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIDataBrowse" func="yes">
+			<Overload retVal="lg_return">
+				<Param name="s_dataType" />
+				<Param name="ls_options" />
+				<Param name="t_title" />
+				<Param name="g_sorted" />
+				<Param name="[t_helpTag]" />
+				<Param name="[l_callback]" />
+				<Param name="[g_args]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIEditFile" func="yes">
+			<Overload retVal="r_window/t/nil">
+				<Param name="t_filename" />
+				<Param name="t_title/nil" />
+				<Param name="g_block" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIGetUserData" func="yes">
+			<Overload retVal="r_userData/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuChange" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_menuId" />
+				<Param name="s_option" />
+				<Param name="g_mode" />
+				<Param name="... <pairs of s_option/g_mode" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuDebug" func="yes">
+			<Overload retVal="ll_menu/t/nil">
+				<Param name="[g_option]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuDelete" func="yes">
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuDump" func="yes">
+			<Overload retVal="t_menuFile/nil">
+				<Param name="t_menuFile" />
+				<Param name="[g_debug]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuFind" func="yes">
+			<Overload retVal="x_menuId/nil">
+				<Param name="x_menuId/nil" />
+				<Param name="t_cmdName/x_location" />
+				<Param name="[g_menuOption]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuInsert" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_menuId" />
+				<Param name="t_display" />
+				<Param name="t_command" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="x_menuId" />
+				<Param name="'separator" />
+			</Overload>
+			<Overload retVal="x_subMenuId/nil">
+				<Param name="x_menuId" />
+				<Param name="'popup" />
+				<Param name="t_display" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="x_menuId" />
+				<Param name="'end" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="x_menuId" />
+				<Param name="ll_items" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuLoad" func="yes">
+			<Overload retVal="t_previousMenuName/nil">
+				<Param name="t_menuFile" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMenuRegister" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_command/x_location" />
+				<Param name="ll_menu" />
+				<Param name="[g_menuOption]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIMultipleChoice" func="yes">
+			<Overload retVal="x_answer/nil">
+				<Param name="t_question" />
+				<Param name="lt_answers" />
+				<Param name="[t_title]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIPopupDefine" func="yes">
+			<Overload retVal="r_popup/nil">
+				<Param name="r_popup" />
+				<Param name="ts_pairs" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIPopupSet" func="yes">
+			<Overload retVal="r_prevPopup">
+				<Param name="r_popup" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIPrompt" func="yes">
+			<Overload retVal="t_response/nil">
+				<Param name="t_message" />
+				<Param name="[t_default]/'password" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIViewFileCreate" func="yes">
+			<Overload retVal="r_windowMsg/nil">
+				<Param name="t_file" />
+				<Param name="t_title" />
+				<Param name="g_deleteFile" />
+				<Param name="[lx_size]" />
+				<Param name="[lt_placement]" />
+				<Param name="[g_formToExpose]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIViewFileReuse" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_windowMsg" />
+				<Param name="t_file" />
+				<Param name="t_title" />
+				<Param name="g_deleteFile" />
+				<Param name="[g_formToExpose]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIViewFileScrollTo" func="yes">
+			<Overload retVal="x_lines/nil">
+				<Param name="r_windowMsg" />
+				<Param name="x_line/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWBeep" func="yes">
+			<Overload retVal="t">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWBlock" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWClose" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/t_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWCloseAll" func="yes">
+			<Overload retVal="t / nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWDisableQuit" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="o_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWExpose" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWExposeByName" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_windowName" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWHelpRegister" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_cmd" />
+				<Param name="t_helpFile" />
+			</Overload>
+			<Overload retVal="t_file">
+				<Param name="t_cmd" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="t_cmd" />
+			</Overload>
+			<Overload retVal="lt_cmds">
+				<Param name="nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWIconify" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/t_window" />
+				<Param name="t/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWIsIconic" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/t_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWIsWindow" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWMove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/nil" />
+				<Param name="t_window" />
+				<Param name="l_xy" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWPerm" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window" />
+				<Param name="[t/nil]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWPrint" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window" />
+				<Param name="[s_msg_level]" />
+				<Param name="t_format_string" />
+				<Param name="[g_arg1 ...]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWRedraw" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWSetHelpTag" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window" />
+				<Param name="t_tag" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWSetParent" func="yes">
+			<Overload retVal="t / nil">
+				<Param name="o_childWindow" />
+				<Param name="o_parentWindow/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWShow" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/nil" />
+				<Param name="s_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWSize" func="yes">
+			<Overload retVal="ll_rect">
+				<Param name="r_window/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWTimerAdd" func="yes">
+			<Overload retVal="o_timerId/nil">
+				<Param name="o_window" />
+				<Param name="x_timeout" />
+				<Param name="g_oneshot" />
+				<Param name="u_callback" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWTimerRemove" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_timerId" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIWUpdate" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="r_window/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIYesNo" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_message" />
+				<Param name="[t_title]" />
+				<Param name="[s_default]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUIYesNoCancel" func="yes">
+			<Overload retVal="x_result">
+				<Param name="t_message" />
+				<Param name="[t_title]" />
+				<Param name="[s_default]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUnfixAll" func="yes">
+			<Overload retVal="x_count">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUnsetVariable" func="yes">
+			<Overload retVal="t">
+				<Param name="t_variable" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlUnsetVariableFile" func="yes">
+			<Overload retVal="t">
+				<Param name="t_variable" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVersion" func="yes">
+			<Overload retVal="g_value/nil">
+				<Param name="s_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVersionIdGet" func="yes">
+			<Overload retVal="x_time">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVersionIdPrint" func="yes">
+			<Overload retVal="t_printTime/nil">
+				<Param name="x_time/t_time" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlViaZLength" func="yes">
+			<Overload retVal="f_length">
+				<Param name="t_layer1" />
+				<Param name="t_layer2" />
+				<Param name="[g_inclusion]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVisibleDesign" func="yes">
+			<Overload retVal="t/ni;">
+				<Param name="g_makeVis" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVisibleGet" func="yes">
+			<Overload retVal="l_visList">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVisibleLayer" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="t_layer" />
+				<Param name="g_makeVis" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVisibleSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="l_visList" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlVisibleUpdate" func="yes">
+			<Overload retVal="t">
+				<Param name="t_now" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWFMAnyExported" func="yes">
+			<Overload retVal="t/nil">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWidth2Impedance" func="yes">
+			<Overload retVal="f_impedance/nil">
+				<Param name="t_layer/x_layerNum" />
+				<Param name="f_lineWidth" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWindowBoxGet" func="yes">
+			<Overload retVal="l_box">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWindowBoxSet" func="yes">
+			<Overload retVal="l_bBox">
+				<Param name="[l_bBox]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWindowFit" func="yes">
+			<Overload retVal="l_bBox">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWriteDeviceFile" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_compDefDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlWritePackageFile" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_symDefDbid" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionCopy" func="yes">
+			<Overload retVal="g_xsectionDefstruct/nil">
+				<Param name="o_xsectionDBID" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionCreate" func="yes">
+			<Overload retVal="o_xsectionDBID/nil">
+				<Param name="nil" />
+				<Param name="g_option" />
+				<Param name="[g_xsectionDefStruct]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionDelete" func="yes">
+			<Overload retVal="lt_types">
+				<Param name="g_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionGet" func="yes">
+			<Overload retVal="g_data/nil">
+				<Param name="g_stackup/nil" />
+				<Param name="g_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionLayerFunctions" func="yes">
+			<Overload retVal="lt_types">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionLayerTypes" func="yes">
+			<Overload retVal="lt_types">
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionModify" func="yes">
+			<Overload retVal="g_xsectionDefstruct/nil">
+				<Param name="<list of defstruct attributes and values" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlXSectionSet" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_option" />
+				<Param name="[g_xsectionDefStruct]" />
+			</Overload>
+			<Overload retVal="t/nil">
+				<Param name="'locked" />
+				<Param name="nil/l_lockType" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomBbox" func="yes">
+			<Overload retVal="bBox">
+				<Param name="x_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomCenter" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_window" />
+				<Param name="xy" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomControl" func="yes">
+			<Overload retVal="g_return">
+				<Param name="s_option" />
+				<Param name="[g_arg]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomFit" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_window" />
+				<Param name="s_option" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomInOut" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_window" />
+				<Param name="x_factor" />
+				<Param name="[xy]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomPoints" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_window" />
+				<Param name="upperLeft_xy" />
+				<Param name="lowerRight_xy" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomToDbid" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="o_dbid/lo_dbid" />
+				<Param name="g_always" />
+				<Param name="[x_window]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlZoomWorld" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="x_window" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axl_ol_ol" func="yes">
+			<Overload retVal="l_result">
+				<Param name="l_seg1" />
+				<Param name="l_seg2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axl_ol_ol2" func="yes">
+			<Overload retVal="l_result">
+				<Param name="l_seg1" />
+				<Param name="l_seg2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="bBoxAdd" func="yes">
+			<Overload retVal="l_bBox_result">
+				<Param name="l_bBox1" />
+				<Param name="l_bBox2" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="copyDeep" func="yes">
+			<Overload retVal="l_newObject">
+				<Param name="l_object" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="isBoxp" func="yes">
+			<Overload retVal="t/nil">
+				<Param name="g_bBox" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="lastelem" func="yes">
+			<Overload retVal="g_elem">
+				<Param name="l_list" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="letStar" func="yes">
+			<Overload retVal="g_lastValue">
+				<Param name="l_bindings" />
+				<Param name="[@body]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="listnindex" func="yes">
+			<Overload retVal="x_found/nil">
+				<Param name="l_theList" />
+				<Param name="g_item" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="axlGetFunckey" func="yes">
+			<Overload retVal="t_value/nil">
+				<Param name="t_alias/nil" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="movedown" func="yes">
+			<Overload retVal="l_newlist">
+				<Param name="g_elem" />
+				<Param name="l_list" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="moveup" func="yes">
+			<Overload retVal="l_newlist">
+				<Param name="g_elem" />
+				<Param name="l_list" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="parseFile" func="yes">
+			<Overload retVal="g_result">
+				<Param name="t_fileName" />
+				<Param name="s_handler" />
+				<Param name="[t_breakChars]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="parseQuotedString" func="yes">
+			<Overload retVal="l_strings">
+				<Param name="t_string" />
+				<Param name="[t_breakCharacters]" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="pprintln" func="yes">
+		</KeyWord>
+
+		<KeyWord name="propNames" func="yes">
+			<Overload retVal="lS_names/nil">
+				<Param name="g_propList" />
+			</Overload>
+		</KeyWord>
+
+		<KeyWord name="abs" />
+		<KeyWord name="acos" />
+		<KeyWord name="add1" />
+		<KeyWord name="addDefstructClass" />
+		<KeyWord name="alias" />
+		<KeyWord name="alphalessp" />
+		<KeyWord name="alphaNumCmp" />
+		<KeyWord name="and" />
+		<KeyWord name="append" />
+		<KeyWord name="append1" />
+		<KeyWord name="apply" />
+		<KeyWord name="argc" />
+		<KeyWord name="argv" />
+		<KeyWord name="arrayp" />
+		<KeyWord name="arrayref" />
+		<KeyWord name="asin" />
+		<KeyWord name="assoc" />
+		<KeyWord name="assq" />
+		<KeyWord name="assv" />
+		<KeyWord name="atan" />
+		<KeyWord name="atof" />
+		<KeyWord name="atoi" />
+		<KeyWord name="atom" />
+		<KeyWord name="band" />
+		<KeyWord name="bcdp" />
+		<KeyWord name="begin" />
+		<KeyWord name="bitfield1" />
+		<KeyWord name="bitfield" />
+		<KeyWord name="blankstrp" />
+		<KeyWord name="bnand" />
+		<KeyWord name="bnor" />
+		<KeyWord name="bnot" />
+		<KeyWord name="booleanp" />
+		<KeyWord name="bor" />
+		<KeyWord name="boundp" />
+		<KeyWord name="buildString" />
+		<KeyWord name="bxnor" />
+		<KeyWord name="bxor" />
+		<KeyWord name="caar" />
+		<KeyWord name="caaar" />
+		<KeyWord name="caadr" />
+		<KeyWord name="cadr" />
+		<KeyWord name="caddr" />
+		<KeyWord name="cdar" />
+		<KeyWord name="cddr" />
+		<KeyWord name="car" />
+		<KeyWord name="case" />
+		<KeyWord name="caseq" />
+		<KeyWord name="cdr" />
+		<KeyWord name="cdsGetInstPath" />
+		<KeyWord name="ceiling" />
+		<KeyWord name="changeWorkingDir" />
+		<KeyWord name="charToInt" />
+		<KeyWord name="clearExitProcs" />
+		<KeyWord name="close" />
+		<KeyWord name="compareTime" />
+		<KeyWord name="compress" />
+		<KeyWord name="concat" />
+		<KeyWord name="cond" />
+		<KeyWord name="cons" />
+		<KeyWord name="copy" />
+		<KeyWord name="copy_" />
+		<KeyWord name="copyDefstructDeep" />
+		<KeyWord name="cos" />
+		<KeyWord name="cputime" />
+		<KeyWord name="createDir" />
+		<KeyWord name="csh" />
+		<KeyWord name="declare" />
+		<KeyWord name="declareLambda" />
+		<KeyWord name="declareNLambda" />
+		<KeyWord name="declareSQNLambda" />
+		<KeyWord name="define" />
+		<KeyWord name="defmacro" />
+		<KeyWord name="defMathConstants" />
+		<KeyWord name="defprop" />
+		<KeyWord name="defstruct" />
+		<KeyWord name="defstructp" />
+		<KeyWord name="defun" />
+		<KeyWord name="defUserInitProc" />
+		<KeyWord name="defvar" />
+		<KeyWord name="deleteDir" />
+		<KeyWord name="deleteFile" />
+		<KeyWord name="difference" />
+		<KeyWord name="display" />
+		<KeyWord name="do" />
+		<KeyWord name="drain" />
+		<KeyWord name="dtpr" />
+		<KeyWord name="ed" />
+		<KeyWord name="edi" />
+		<KeyWord name="edit" />
+		<KeyWord name="edl" />
+		<KeyWord name="envobj" />
+		<KeyWord name="eq" />
+		<KeyWord name="equal" />
+		<KeyWord name="eqv" />
+		<KeyWord name="err" />
+		<KeyWord name="error" />
+		<KeyWord name="errset" />
+		<KeyWord name="errsetstring" />
+		<KeyWord name="eval" />
+		<KeyWord name="evalstring" />
+		<KeyWord name="evenp" />
+		<KeyWord name="exists" />
+		<KeyWord name="exit" />
+		<KeyWord name="exp" />
+		<KeyWord name="expandMacro" />
+		<KeyWord name="expt" />
+		<KeyWord name="fboundp" />
+		<KeyWord name="fileLength" />
+		<KeyWord name="fileSeek" />
+		<KeyWord name="fileTell" />
+		<KeyWord name="fileTimeModified" />
+		<KeyWord name="fix" />
+		<KeyWord name="fixp" />
+		<KeyWord name="float" />
+		<KeyWord name="floatp" />
+		<KeyWord name="floor" />
+		<KeyWord name="for" />
+		<KeyWord name="forall" />
+		<KeyWord name="foreach" />
+		<KeyWord name="fprintf" />
+		<KeyWord name="fscanf" />
+		<KeyWord name="scanf" />
+		<KeyWord name="sscanf" />
+		<KeyWord name="funcall" />
+		<KeyWord name="funobj" />
+		<KeyWord name="gc" />
+		<KeyWord name="gensym" />
+		<KeyWord name="geqp" />
+		<KeyWord name="get" />
+		<KeyWord name="get_filename" />
+		<KeyWord name="get_pname" />
+		<KeyWord name="get_string" />
+		<KeyWord name="getc" />
+		<KeyWord name="getchar" />
+		<KeyWord name="getCurrentTime" />
+		<KeyWord name="getd" />
+		<KeyWord name="getDirFiles" />
+		<KeyWord name="getFnWriteProtect" />
+		<KeyWord name="getFunType" />
+		<KeyWord name="getInstallPath" />
+		<KeyWord name="getLogin" />
+		<KeyWord name="getPrompts" />
+		<KeyWord name="getq" />
+		<KeyWord name="getqq" />
+		<KeyWord name="getTempDir" />
+		<KeyWord name="gets" />
+		<KeyWord name="getShellEnvVar" />
+		<KeyWord name="getSkillPath" />
+		<KeyWord name="getSkillVersion" />
+		<KeyWord name="getVarWriteProtect" />
+		<KeyWord name="getVersion" />
+		<KeyWord name="getWarn" />
+		<KeyWord name="getWorkingDir" />
+		<KeyWord name="go" />
+		<KeyWord name="greaterp" />
+		<KeyWord name="help" />
+		<KeyWord name="if" />
+		<KeyWord name="importSkillVar" />
+		<KeyWord name="index" />
+		<KeyWord name="infile" />
+		<KeyWord name="inportp" />
+		<KeyWord name="inScheme" />
+		<KeyWord name="inSkill" />
+		<KeyWord name="instring" />
+		<KeyWord name="integerp" />
+		<KeyWord name="intToChar" />
+		<KeyWord name="isCallable" />
+		<KeyWord name="isDir" />
+		<KeyWord name="isExecutable" />
+		<KeyWord name="isFile" />
+		<KeyWord name="isFileEncrypted" />
+		<KeyWord name="isFileName" />
+		<KeyWord name="isInfinity" />
+		<KeyWord name="isLargeFile" />
+		<KeyWord name="isLink" />
+		<KeyWord name="isMacro" />
+		<KeyWord name="isNaN" />
+		<KeyWord name="isReadable" />
+		<KeyWord name="isWritable" />
+		<KeyWord name="lambda" />
+		<KeyWord name="last" />
+		<KeyWord name="lconc" />
+		<KeyWord name="leftshift" />
+		<KeyWord name="length" />
+		<KeyWord name="leqp" />
+		<KeyWord name="lessp" />
+		<KeyWord name="let" />
+		<KeyWord name="letrec" />
+		<KeyWord name="letseq" />
+		<KeyWord name="lineread" />
+		<KeyWord name="linereadstring" />
+		<KeyWord name="list" />
+		<KeyWord name="listp" />
+		<KeyWord name="listToVector" />
+		<KeyWord name="load" />
+		<KeyWord name="loadi" />
+		<KeyWord name="loadstring" />
+		<KeyWord name="log" />
+		<KeyWord name="log10" />
+		<KeyWord name="lowerCase" />
+		<KeyWord name="make_" />
+		<KeyWord name="makeTable" />
+		<KeyWord name="makeTempFileName" />
+		<KeyWord name="makeVector" />
+		<KeyWord name="map" />
+		<KeyWord name="mapc" />
+		<KeyWord name="mapcan" />
+		<KeyWord name="mapcar" />
+		<KeyWord name="maplist" />
+		<KeyWord name="max" />
+		<KeyWord name="measureTime" />
+		<KeyWord name="member" />
+		<KeyWord name="memq" />
+		<KeyWord name="memv" />
+		<KeyWord name="min" />
+		<KeyWord name="minus" />
+		<KeyWord name="minusp" />
+		<KeyWord name="mod" />
+		<KeyWord name="modulo" />
+		<KeyWord name="mprocedure" />
+		<KeyWord name="nconc" />
+		<KeyWord name="ncons" />
+		<KeyWord name="needNCells" />
+		<KeyWord name="negativep" />
+		<KeyWord name="neq" />
+		<KeyWord name="nequal" />
+		<KeyWord name="newline" />
+		<KeyWord name="nindex" />
+		<KeyWord name="nlambda" />
+		<KeyWord name="not" />
+		<KeyWord name="nprocedure" />
+		<KeyWord name="nth" />
+		<KeyWord name="nthcdr" />
+		<KeyWord name="nthelem" />
+		<KeyWord name="null" />
+		<KeyWord name="numberp" />
+		<KeyWord name="numOpenFiles" />
+		<KeyWord name="oddp" />
+		<KeyWord name="onep" />
+		<KeyWord name="openportp" />
+		<KeyWord name="or" />
+		<KeyWord name="otherp" />
+		<KeyWord name="outfile" />
+		<KeyWord name="outportp" />
+		<KeyWord name="pairp" />
+		<KeyWord name="parseString" />
+		<KeyWord name="plist" />
+		<KeyWord name="plus" />
+		<KeyWord name="plusp" />
+		<KeyWord name="portp" />
+		<KeyWord name="postdecrement" />
+		<KeyWord name="postincrement" />
+		<KeyWord name="pprint" />
+		<KeyWord name="predecrement" />
+		<KeyWord name="preincrement" />
+		<KeyWord name="prependInstallPath" />
+		<KeyWord name="print" />
+		<KeyWord name="printf" />
+		<KeyWord name="printlev" />
+		<KeyWord name="println" />
+		<KeyWord name="procedure" />
+		<KeyWord name="procedurep" />
+		<KeyWord name="prog" />
+		<KeyWord name="prog1" />
+		<KeyWord name="prog2" />
+		<KeyWord name="progn" />
+		<KeyWord name="putd" />
+		<KeyWord name="putprop" />
+		<KeyWord name="putpropq" />
+		<KeyWord name="putpropqq" />
+		<KeyWord name="quote" />
+		<KeyWord name="quotient" />
+		<KeyWord name="random" />
+		<KeyWord name="range" />
+		<KeyWord name="read" />
+		<KeyWord name="readstring" />
+		<KeyWord name="readTable" />
+		<KeyWord name="realp" />
+		<KeyWord name="regExitAfter" />
+		<KeyWord name="regExitBefore" />
+		<KeyWord name="remainder" />
+		<KeyWord name="remd" />
+		<KeyWord name="remdq" />
+		<KeyWord name="remExitProc" />
+		<KeyWord name="remove" />
+		<KeyWord name="remprop" />
+		<KeyWord name="remq" />
+		<KeyWord name="renameFile" />
+		<KeyWord name="return" />
+		<KeyWord name="reverse" />
+		<KeyWord name="rexCompile" />
+		<KeyWord name="rexExecute" />
+		<KeyWord name="rexMagic" />
+		<KeyWord name="rexMatchAssocList" />
+		<KeyWord name="rexMatchList" />
+		<KeyWord name="rexMatchp" />
+		<KeyWord name="rexReplace" />
+		<KeyWord name="rexSubstitute" />
+		<KeyWord name="rightshift" />
+		<KeyWord name="rindex" />
+		<KeyWord name="round" />
+		<KeyWord name="rplaca" />
+		<KeyWord name="rplacd" />
+		<KeyWord name="schemeTopLevelEnv" />
+		<KeyWord name="set" />
+		<KeyWord name="setarray" />
+		<KeyWord name="setcar" />
+		<KeyWord name="setcdr" />
+		<KeyWord name="setFnWriteProtect" />
+		<KeyWord name="setof" />
+		<KeyWord name="setplist" />
+		<KeyWord name="setPrompts" />
+		<KeyWord name="setq" />
+		<KeyWord name="setqbitfield1" />
+		<KeyWord name="setqbitfield" />
+		<KeyWord name="setShellEnvVar" />
+		<KeyWord name="setSkillPath" />
+		<KeyWord name="setVarWriteProtect" />
+		<KeyWord name="sh" />
+		<KeyWord name="shell" />
+		<KeyWord name="simplifyFilename" />
+		<KeyWord name="sin" />
+		<KeyWord name="sort" />
+		<KeyWord name="sortcar" />
+		<KeyWord name="sprintf" />
+		<KeyWord name="sqrt" />
+		<KeyWord name="srandom" />
+		<KeyWord name="sstatus" />
+		<KeyWord name="status" />
+		<KeyWord name="strcat" />
+		<KeyWord name="strcmp" />
+		<KeyWord name="stringp" />
+		<KeyWord name="stringToFunction" />
+		<KeyWord name="stringToSymbol" />
+		<KeyWord name="stringToTime" />
+		<KeyWord name="strlen" />
+		<KeyWord name="strncat" />
+		<KeyWord name="strncmp" />
+		<KeyWord name="sub1" />
+		<KeyWord name="subst" />
+		<KeyWord name="substring" />
+		<KeyWord name="sxtd" />
+		<KeyWord name="symbolp" />
+		<KeyWord name="symbolToString" />
+		<KeyWord name="symeval" />
+		<KeyWord name="symstrp" />
+		<KeyWord name="system" />
+		<KeyWord name="tablep" />
+		<KeyWord name="tableToList" />
+		<KeyWord name="tailp" />
+		<KeyWord name="tan" />
+		<KeyWord name="tconc" />
+		<KeyWord name="theEnvironment" />
+		<KeyWord name="times" />
+		<KeyWord name="timeToString" />
+		<KeyWord name="timeToTm" />
+		<KeyWord name="tmToTime" />
+		<KeyWord name="truncate" />
+		<KeyWord name="type" />
+		<KeyWord name="typep" />
+		<KeyWord name="unalias" />
+		<KeyWord name="unique" />
+		<KeyWord name="unless" />
+		<KeyWord name="upperCase" />
+		<KeyWord name="vector" />
+		<KeyWord name="vectorp" />
+		<KeyWord name="vectorToList" />
+		<KeyWord name="vi" />
+		<KeyWord name="vii" />
+		<KeyWord name="vil" />
+		<KeyWord name="warn" />
+		<KeyWord name="when" />
+		<KeyWord name="which" />
+		<KeyWord name="while" />
+		<KeyWord name="write" />
+		<KeyWord name="writeTable" />
+		<KeyWord name="xcons" />
+		<KeyWord name="xdifference" />
+		<KeyWord name="xplus" />
+		<KeyWord name="xquotient" />
+		<KeyWord name="xtimes" />
+		<KeyWord name="zerop" />
+		<KeyWord name="zxtd" />
+		<KeyWord name="arglist" />
+		<KeyWord name="break" />
+		<KeyWord name="breakpt" />
+		<KeyWord name="callInitProc" />
+		<KeyWord name="clear" />
+		<KeyWord name="cont,continue" />
+		<KeyWord name="count" />
+		<KeyWord name="debugQuit" />
+		<KeyWord name="debugStatus" />
+		<KeyWord name="defCapDepends" />
+		<KeyWord name="defCapPrefixes" />
+		<KeyWord name="defInitProc" />
+		<KeyWord name="dump" />
+		<KeyWord name="encrypt" />
+		<KeyWord name="gcsummary" />
+		<KeyWord name="getAllLoadedFiles" />
+		<KeyWord name="getFunctions" />
+		<KeyWord name="ilToolBox" />
+		<KeyWord name="installDebugger" />
+		<KeyWord name="isContextLoaded" />
+		<KeyWord name="listFunctions" />
+		<KeyWord name="listVariables" />
+		<KeyWord name="loadContext" />
+		<KeyWord name="next" />
+		<KeyWord name="pp" />
+		<KeyWord name="printFunctions" />
+		<KeyWord name="printObject" />
+		<KeyWord name="printstruct" />
+		<KeyWord name="printVariables" />
+		<KeyWord name="profile" />
+		<KeyWord name="profileReset" />
+		<KeyWord name="profileSummary" />
+		<KeyWord name="resume" />
+		<KeyWord name="saveContext" />
+		<KeyWord name="setContext" />
+		<KeyWord name="skDisableMessage" />
+		<KeyWord name="skDisableMessageBlock" />
+		<KeyWord name="skEnableMessageBlock" />
+		<KeyWord name="skIgnoreMessage" />
+		<KeyWord name="skillDebugger" />
+		<KeyWord name="sklint" />
+		<KeyWord name="skTabulateSKILL" />
+		<KeyWord name="skUnignoreMessage" />
+		<KeyWord name="stacktrace" />
+		<KeyWord name="step" />
+		<KeyWord name="stepend" />
+		<KeyWord name="stepout" />
+		<KeyWord name="toplevel" />
+		<KeyWord name="tracef" />
+		<KeyWord name="tracep" />
+		<KeyWord name="tracev" />
+		<KeyWord name="unbreakpt" />
+		<KeyWord name="uncount" />
+		<KeyWord name="uninstallDebugger" />
+		<KeyWord name="unprofile" />
+		<KeyWord name="untrace" />
+		<KeyWord name="untracep" />
+		<KeyWord name="untracev" />
+		<KeyWord name="where" />
+		<KeyWord name="whereIs" />
+		<KeyWord name="make__axlPath" />
+		<KeyWord name="make__axlPathSeg" />
+		<KeyWord name="make_axlCompPinRecord" />
+		<KeyWord name="make_axlFill" />
+		<KeyWord name="make_axlPadStackDrill" />
+		<KeyWord name="make_axlPadStackPad" />
+		<KeyWord name="make_axlPinData" />
+		<KeyWord name="make_axlPinText" />
+		<KeyWord name="make_axlTextOrientation" />
+		<KeyWord name="copy__axlPath" />
+		<KeyWord name="copy__axlPathSeg" />
+		<KeyWord name="copy_axlCompPinRecord" />
+		<KeyWord name="copy_axlFill" />
+		<KeyWord name="copy_axlPadStackDrill" />
+		<KeyWord name="copy_axlPadStackPad" />
+		<KeyWord name="copy_axlPinData" />
+		<KeyWord name="copy_axlPinText" />
+		<KeyWord name="copy_axlTextOrientation" />
+		<KeyWord name="pscGetObjectByLayer" />
+	</AutoComplete>
+</NotepadPlus>
